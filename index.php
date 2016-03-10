@@ -8,6 +8,7 @@
 // Email: bwarring24@gmail.com   //
 ///////////////////////////////////
 
+session_start();
 
 // Lets check to make sure our config file exists
 if(!file_exists("includes/config.inc.php")){
