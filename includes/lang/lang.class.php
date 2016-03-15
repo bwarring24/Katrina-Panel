@@ -18,7 +18,10 @@ class Lang{
         // TODO allow users to change their language via settings
         
         //Temporary variable until user settings override
-        $this->lang = $settings['language'];
+        require_once("includes/config.inc.php");
+        
+        $setting['language'] = "en";
+        $this->lang = $setting['language'];
         
         if(file_exists("includes/lang/packs/" .$this->lang.".lang.php")){
             // Language pack exists, lets go ahead and load it.
@@ -48,7 +51,7 @@ class Lang{
     
     public static function getInstance(){
         if(!self::$instance){
-            self::$instance = new lang();
+            self::$instance = new Lang();
         }
         
         return self::$instance;
