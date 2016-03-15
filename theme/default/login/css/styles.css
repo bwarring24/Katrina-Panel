@@ -27,7 +27,7 @@ h2 {
 
 #loginContainer{
     width: 424px;
-    height: 475px;
+    height: 424px;
     margin-left: auto;
     margin-right: auto;
     border-color: #B6B6B6;
@@ -58,7 +58,6 @@ h2 {
     float: right;
 }
 
-
 #line{
     margin-left: 50px;
 	margin-right: 50px;
@@ -66,6 +65,15 @@ h2 {
 	border-top-style: solid;
 	border-top-color: #b6b6b6;
 }
+
+#txtUser{
+    margin-left: 50px;
+}
+
+#txtPass{
+    margin-left: 53px;
+}
+
 
 #footer{
     text-align: center;

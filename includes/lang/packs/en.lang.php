@@ -23,5 +23,13 @@ $langPack['login']['submit'] = "Login";
 $langPack['login']['logoutMsg'] = "You have been logged out.";
 $langPack['login']['errorUserPass'] = "The username or password provided is incorrect";
 $langPack['login']['errorMaxAttemps'] = "You have reached the maximum number of attempts to login, please wait approximently" .$setting['maxAttemptTimeout']. "minutes.";
+$langPack['login']['createAccount'] = "Create an Account";
 
+
+// Reigster Pack
+$langPack['register']['pageTitle'] = "Register - Katrina Panel";
+$langPack['register']['title'] = "Register";
+$langPack['register']['firstName'] = "First Name";
+$langPack['register']['lastName'] = "First Name";
+$langPack['register']['submit'] = "Create Account";
 ?>
