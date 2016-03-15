@@ -21,6 +21,7 @@ class Tpl{
         $this->Auth = Auth::getInstance();
         
         if($this->Auth->isAuthenticated()){
+            
             // User is logged in so we can load the template for the logged in pages
             if(file_exists("theme/default/main/template.tpl")){
                 $fp = fopen("theme/default/main/template.tpl", "r");
@@ -42,6 +43,7 @@ class Tpl{
                 $this->template = explode("{page}", $this->Lang->replaceBlock($contents));
             }else{
                 // Login page template doesn't exist. Throw error and report to coreError service.
+                die("Template not found.");
             }
         }
         

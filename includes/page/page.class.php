@@ -14,6 +14,9 @@ class Page{
     private $Lang, $Auth, $User;
     private $page = null;
     private $pageFullPath = null;
+    private $module = null;
+    private $pageContents = null;
+    
     
     function __construct(){
         $this->Lang = Lang::getInstance();
@@ -21,6 +24,7 @@ class Page{
         
         if($this->Auth->isAuthenticated()){
             // User is logged in
+            echo "USER IS AUTHENTICATED";
         }else{
             // User isn't logged in
             
@@ -30,7 +34,7 @@ class Page{
                 if(file_exists("pages/" .$page. ".pg.php")){
                     // Page exists so we can set the class var now
                     $this->page = $page;
-                    $this->pageFullPath = "pages/" .$page. ".ph.php";
+                    $this->pageFullPath = "pages/" .$page. ".pg.php";
                 }else{
                     // Page doesnt exist for un-athenticated users; Redirect to login\
                     $this->page = "login";
@@ -42,6 +46,19 @@ class Page{
                 $this->pageFullPath = "pages/login.pg.php";
             }
         }
+        
+        if ($this->module == NULL)
+		{
+			// No module has been selected, so we are playing with non-auth pages.
+			$fp = fopen('./pages/'.$this->page.'.pg.php', 'r');
+			$this->pageContents = fread($fp, filesize('./pages/'.$this->page.'.pg.php')+1);
+			fclose($fp);
+		}
+		else
+		{
+			// Module has been selected so we are playing with auth pages.
+			$this->pageFullPath = './pages/'.$this->module.'/'.$this->page.'.pg.php';
+		}
     }
     
     public function execPage()
