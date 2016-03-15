@@ -9,18 +9,13 @@
     
     <div id="loginContainer">
         <div id="headerBar">
-                      
-            <div id="leftRivet">
-                <img src="theme/default/login/images/rivets.png" alt="" />
-            </div>
+            <img id="leftRivet" src="theme/default/login/images/rivets.png" alt="" />
             
             <div id="headerTitle">
                 {lang:login-pageTitle}
             </div>
             
-            <div id="rightRivet">
-                <img src="theme/default/login/images/rivets.png" alt="" />
-            </div>
+            <img id="rightRivet" src="theme/default/login/images/rivets.png" alt="" />
             
         </div>
         
