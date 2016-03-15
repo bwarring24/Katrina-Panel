@@ -7,33 +7,25 @@
 </head>
 <body>
     
-    <div id="mainContainer">
+    <div id="loginContainer">
         <div id="headerBar">
                       
             <div id="leftRivet">
-                <img src="theme/default/main/images/rivets.png" alt="" />
+                <img src="theme/default/login/images/rivets.png" alt="" />
             </div>
             
             <div id="headerTitle">
-                Intranet Server
-            </div>
-            
-            <div id="shortcuts">
-            
-            </div>
-            
-            <div id="search">
-                
+                {lang:login-pageTitle}
             </div>
             
             <div id="rightRivet">
-                <img src="theme/default/main/images/rivets.png" alt="" />
+                <img src="theme/default/login/images/rivets.png" alt="" />
             </div>
             
         </div>
         
         <div id="headerBanner">
-            <img src="theme/default/main/images/banner.png" alt="Katrina Panel" />
+            <img src="theme/default/login/images/banner.png" alt="Katrina Panel" />
         </div>
         
         
@@ -41,16 +33,8 @@
             {page}
         </div>
         
-        <div id="foot">
-            <a href="">KatrinaPanel</a> |
-            <a href="">Documentation</a> |
-            <a href="">Logout</a>
+        <div id="footer">
             
-            <br />
-            
-            <div id="copyright">
-                This software is provided free under the Creative Commons Open Source License
-            </div>
         </div>
     </div>
 </body>

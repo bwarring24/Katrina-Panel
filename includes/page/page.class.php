@@ -1,6 +1,6 @@
 <?php
 ///////////////////////////////////
-// page.class.php v1                //
+// page.class.php v1             //
 //                               //
 // Date Created: 03/15/16        //
 // Last Modified: 03/15/16       //
