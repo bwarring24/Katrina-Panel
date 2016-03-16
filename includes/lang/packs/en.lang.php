@@ -30,6 +30,7 @@ $langPack['login']['createAccount'] = "Create an Account";
 $langPack['register']['pageTitle'] = "Register - Katrina Panel";
 $langPack['register']['title'] = "Register";
 $langPack['register']['firstName'] = "First Name";
-$langPack['register']['lastName'] = "First Name";
+$langPack['register']['lastName'] = "Last Name";
+$langPack['register']['email'] = "Email";
 $langPack['register']['submit'] = "Create Account";
 ?>
