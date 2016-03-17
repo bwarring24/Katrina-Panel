@@ -7,20 +7,24 @@
   </div>
 
   <div id="login">
-    <h2>{lang:register-firstName}<input id="txtFirstName" type="text" name="firstName" pattern ="^[a-zA-Z]+$" placeholder = "i.e. John" oninput = "check(this)" size="20" required /><span class="error">* <?php echo $firstNameErr;?></span></h2>
+    <div class="frmLabel"><h2>{lang:register-firstName}</h2></div>
+    <div class="frmInput"><h2><input id="txtFirstName" type="text" name="firstName" pattern="^[a-zA-Z]+$" placeholder="i.e. John" oninput="check(this)" size="20" required /><span class="error">* <?php echo $firstNameErr;?></span></h2></div>
   </div>
 
   <div id="login">
-    <h2>{lang:register-lastName}<input id="txtLastName" type="text" name="lastName" pattern = "^[a-zA-Z]+$" placeholder = "i.e. Doe" oninput = "check(this)" size="20" required/><span class="error">* <?php echo $lastNameErr;?></span></h2>
+    <div class="frmLabel"><h2>{lang:register-lastName}</h2></div>
+    <div class="frmInput"><h2><input id="txtLastName" type="text" name="lastName" pattern="^[a-zA-Z]+$" placeholder="i.e. Doe" oninput="check(this)" size="20" required/><span class="error">* <?php echo $lastNameErr;?></span></h2></div>
   </div>
 
   <div id="login">
-    <h2>{lang:register-email}<input id="txtEmail" type="email" name="email" placeholder = "johndoe@gmail.com" size="20" required/><span class="error">* <?php echo $emailErr;?></span></h2>
+    <div class="frmLabel"><h2>{lang:register-email}</h2></div>
+    <div class="frmInput"><h2><input id="txtEmail" type="email" name="email" placeholder="johndoe@gmail.com" size="20" required/><span class="error">* <?php echo $emailErr;?></span></h2></div>
 
   </div>
 
   <div id="login">
-    <h2>{lang:login-password}<input id="txtPass" type="password" name="password" pattern = "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$" placeholder="i.e. abcdef123" oninput="check(this)" size="20" required/><span class="error">* <?php echo $passErr;?></span></h2>
+    <div class="frmLabel"><h2>{lang:login-password}</h2></div>
+    <div class="frmInput"><h2><input id="txtPass" type="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$" placeholder="i.e. abcdef123" oninput="check(this)" size="20" required/><span class="error">* <?php echo $passErr;?></span></h2></div>
   </div>
 
   <div id="line">

@@ -76,7 +76,9 @@ class Page{
 	{
 		$oldOutput = ob_get_clean();
 		ob_start();
-        include $this->pageHeaderFullPath;
+        if(!$this->pageHeaderFullPath == null){
+            include $this->pageHeaderFullPath;
+        }
 		include $this->pageFullPath;
 		$myContent = ob_get_clean();
 		ob_start();
