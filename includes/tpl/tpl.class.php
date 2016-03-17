@@ -35,7 +35,16 @@ class Tpl{
         }else{
             // User is not logged in. Load login page
             
-            if(file_exists("theme/default/login/template.tpl")){
+            if(isset($_GET['p'])){
+                // Specific page is requested
+                if(file_exists("theme/default/" .$_GET['p']. "/template.tpl")){
+                    $fp = fopen("theme/default/" .$_GET['p']. "/template.tpl", "r");
+                    $contents = fread($fp, filesize("theme/default/" .$_GET['p']. "/template.tpl")+1);
+                    fclose($fp);
+                    
+                    $this->template = explode("{page}", $this->Lang->replaceBlock($contents));
+                }
+            }elseif(file_exists("theme/default/login/template.tpl")){
                 $fp = fopen("theme/default/login/template.tpl", "r");
                 $contents = fread($fp, filesize("theme/default/login/template.tpl")+1);
                 fclose($fp);

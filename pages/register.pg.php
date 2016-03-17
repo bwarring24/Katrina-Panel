@@ -19,7 +19,6 @@
   <div id="login">
     <div class="frmLabel"><h2>{lang:register-email}</h2></div>
     <div class="frmInput"><h2><input id="txtEmail" type="email" name="email" placeholder="johndoe@gmail.com" size="20" required/><span class="error">* <?php echo $emailErr;?></span></h2></div>
-
   </div>
 
   <div id="login">
@@ -36,19 +35,3 @@
     <input id="btn" type="submit" name="btnSubmit" value="{lang:register-submit}" />
   </div>
 </form>
-<script>
-function check(input) {
-    if(input.validity.patternMismatch){
-      if(input.type ==  "password"){
-        input.setCustomValidity("minimum 5 character, 1 number and 1 letter.");
-      }
-      if(input.type == "text"){
-        input.setCustomValidity("Only alphabetical characters allowed.")
-      }
-  }
-    else {
-        input.setCustomValidity("");
-    }
-}
-
-</script>

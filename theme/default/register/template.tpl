@@ -3,24 +3,25 @@
 <head>
     <meta http-equiv="ContetType" content="text/html; charset=utf-8" />
     <title>{lang:pageName-pageTitle}</title>
-    <link href="theme/default/login/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="theme/default/register/css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="javascript/validate.js" language="javascript" type="text/javascript"></script>
 </head>
 <body>
     
-    <div id="loginContainer">
+    <div id="registerContainer">
         <div id="headerBar">
-            <img id="leftRivet" src="theme/default/login/images/rivets.png" alt="" />
+            <img id="leftRivet" src="theme/default/register/images/rivets.png" alt="" />
             
             <div id="headerTitle">
                 {lang:pageName-pageTitle}
             </div>
             
-            <img id="rightRivet" src="theme/default/login/images/rivets.png" alt="" />
+            <img id="rightRivet" src="theme/default/register/images/rivets.png" alt="" />
             
         </div>
         
         <div id="headerBanner">
-            <img src="theme/default/login/images/banner.png" alt="Katrina Panel" />
+            <img src="theme/default/register/images/banner.png" alt="Katrina Panel" />
         </div>
         
         

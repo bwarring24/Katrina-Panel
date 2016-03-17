@@ -1,3 +1,5 @@
+/* Global Tags */
+
 body {
     margin: 0px;
     width: 100%;
@@ -25,17 +27,9 @@ h2 {
 	margin-top: 20px;
 }
 
-#loginContainer{
-    width: 424px;
-    min-height: 424px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 27px;
-    border-color: #B6B6B6;
-    border-width: 1px;
-    border-style: solid;
-}
+
+
+/* Header */
 
 #headerBar{
     width: 100%;
@@ -59,6 +53,22 @@ h2 {
 
 #rightRivet{
     float: right;
+}
+
+
+
+/* Content  */
+
+#loginContainer{
+    width: 424px;
+    min-height: 424px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 27px;
+    border-color: #B6B6B6;
+    border-width: 1px;
+    border-style: solid;
 }
 
 #line{
@@ -100,6 +110,7 @@ h2 {
     margin: 0px;
 }
 
+/* Footer [Start] */
 
 #footer{
     text-align: center;
