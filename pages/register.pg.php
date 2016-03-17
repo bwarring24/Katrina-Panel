@@ -1,6 +1,43 @@
 
-<?php include 'validate.php';
-include '/Applications/MAMP/htdocs/Katrina-Panel/includes/config.inc.php';?>
+<?php
+include 'pages/validate.php';
+
+$validated = true;
+
+if(!empty($firstNameErr) || !empty($lastNameErr) || !empty($emailErr) || !empty($passErr)){
+    $validated = false;
+}
+
+if (isset($_POST['btnSubmit'])) {
+    $firstName = $_POST['firstName'];
+    $lastName = $_POST['lastName'];
+    $password = $_POST['password'];
+    $email = $_POST['email'];
+
+    $DB = DB::getInstance();
+
+    $sql = "SELECT * FROM users WHERE email='".$email."'";
+    $DB->query($sql);
+
+    //echo $DB->rowCount();
+    if($DB->rowCount() >= 1){
+        $validated = false;
+    }
+
+    if($validated){
+         $sql = "INSERT INTO users (firstname, lastname, password, email) VALUES ('$firstName', '$lastName','$password', '$email')";
+
+        if ($DB->query($sql)) {
+            echo "Successful Registration!";
+        } else {
+            echo "Error: " . $sql . "<br>" . $DB->error();
+        }
+    }
+
+    $DB->close();
+}
+
+?>
 
 <form name="login" method="POST" >
   <div id="login">
@@ -36,37 +73,6 @@ include '/Applications/MAMP/htdocs/Katrina-Panel/includes/config.inc.php';?>
     <input id="btn" type="submit" name="btnSubmit" value="{lang:register-submit}" />
   </div>
 </form>
-
-<?php
-$validated = $firstNameErr = $lastNameErr = $emailErr = $passErr;
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-$firstName = $_POST['firstName'];
-$lastName = $_POST['lastName'];
-$password = $_POST['password'];
-$email = $_POST['email'];
-
-if(!($validated)){
-// Create connection
-$conn = mysqli_connect($db['host'],$db['user'], $db['pass'],$db['name']);
-// Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
-}
-
-$sql = "INSERT INTO users (firstname, lastname, password, email)
-VALUES ('$firstName', '$lastName','$password', '$email')";
-
-if (mysqli_query($conn, $sql)) {
-  echo "Successful Registration!";
-} else {
-  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-
-mysqli_close($conn);
-}
-}
-?>
 <script>
 function check(input) {
     if(input.validity.patternMismatch){
