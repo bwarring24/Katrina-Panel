@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="ContetType" content="text/html; charset=utf-8" />
-    <title>{lang:login-pageTitle}</title>
+    <title>{lang:pageName-pageTitle}</title>
     <link href="theme/default/login/css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -12,7 +12,7 @@
             <img id="leftRivet" src="theme/default/login/images/rivets.png" alt="" />
             
             <div id="headerTitle">
-                {lang:login-pageTitle}
+                {lang:pageName-pageTitle}
             </div>
             
             <img id="rightRivet" src="theme/default/login/images/rivets.png" alt="" />
