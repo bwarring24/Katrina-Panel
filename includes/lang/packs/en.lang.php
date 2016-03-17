@@ -22,7 +22,7 @@ $langPack['login']['password'] = "Password";
 $langPack['login']['submit'] = "Login";
 $langPack['login']['logoutMsg'] = "You have been logged out.";
 $langPack['login']['errorUserPass'] = "The username or password provided is incorrect";
-$langPack['login']['errorMaxAttemps'] = "You have reached the maximum number of attempts to login, please wait approximently" .$setting['maxAttemptTimeout']. "minutes.";
+$langPack['login']['errorMaxAttemps'] = "You have reached the maximum number of attempts to login";
 $langPack['login']['createAccount'] = "Create an Account";
 
 
@@ -33,4 +33,8 @@ $langPack['register']['firstName'] = "First Name";
 $langPack['register']['lastName'] = "Last Name";
 $langPack['register']['email'] = "Email";
 $langPack['register']['submit'] = "Create Account";
+$langPack['register']['success'] = "Successful Registration!";
+$langPack['register']['userExists'] = "Email is already used.";
+
+$langPack['test']['MEOW'] = "MEOWOEOEOWOEOEOEOWE";
 ?>

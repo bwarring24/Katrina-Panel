@@ -3,7 +3,7 @@
 // lang.class.php v1             //
 //                               //
 // Date Created: 03/09/16        //
-// Last Modified: 03/09/16       //
+// Last Modified: 03/17/16       //
 // Contact: Blake Warrington     //
 // Email: bwarring24@gmail.com   //
 ///////////////////////////////////

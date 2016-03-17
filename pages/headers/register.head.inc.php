@@ -20,19 +20,19 @@
 
         if($DB->rowCount() >= 1){
             $validated = false;
-            echo "<span class='error'>That email has already been registered!</span>";
+            echo "<span class='error'>{lang:register-userExists}</span>";
         }
         
         if($validated){
             $sql = "INSERT INTO users (firstname, lastname, password, email) VALUES ('$firstName', '$lastName','$password', '$email')";
             
             if ($DB->query($sql)) {
-                echo "<span class='success'>Successful Registration!</span>";
+                echo "<span class='success'>{lang:register-success}</span>";
             } else {
                 echo "Error: " . $sql . "<br>" . $DB->error();
             }
         }
         
         $DB->close();
-    }  
+    }
 ?>
