@@ -39,6 +39,13 @@ if($setting['language'] != null){
     die("Must specify a default language!");
 }
 
+// Check to see if the db class exists
+if(file_exists("includes/db/db.class.php")){
+    require_once("includes/db/db.class.php");
+}else{
+    die("Unable to locate the db class, file does not exist");
+}
+
 // Check to see if the auth class exists
 if(file_Exists("includes/auth/auth.class.php")){
     require_once("includes/auth/auth.class.php");
