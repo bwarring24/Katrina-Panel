@@ -72,7 +72,6 @@ class DB{
     
     public static function getInstance(){
         if(!self::$instance){
-            echo "NEW INSTANCE";
             self::$instance = new DB();
         }
         

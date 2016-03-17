@@ -14,6 +14,7 @@ class Page{
     private $Lang, $Auth, $User;
     private $page = null;
     private $pageFullPath = null;
+    private $pageHeaderFullPath = null;
     private $module = null;
     private $pageContents = null;
     
@@ -32,6 +33,11 @@ class Page{
                 $page = $_GET['p'];
                 
                 if(file_exists("pages/" .$page. ".pg.php")){
+                    // Now lets check to see if there is a header
+                    if(file_exists("pages/headers/" .$page. ".head.inc.php")){
+                        $this->pageHeaderFullPath = "pages/headers/" .$page. ".head.inc.php";
+                    }
+                    
                     // Page exists so we can set the class var now
                     $this->page = $page;
                     $this->pageFullPath = "pages/" .$page. ".pg.php";
@@ -50,8 +56,13 @@ class Page{
         if ($this->module == NULL)
 		{
 			// No module has been selected, so we are playing with non-auth pages.
+            if(!$this->pageHeaderFullPath == null){
+                $fp = fopen("pages/headers/" .$this->page. ".head.inc.php", 'r');
+                $this->pageContents = fread($fp, filesize("pages/headers/" .$this->page. ".head.inc.php")+1);
+                fclose($fp);
+            }
 			$fp = fopen('./pages/'.$this->page.'.pg.php', 'r');
-			$this->pageContents = fread($fp, filesize('./pages/'.$this->page.'.pg.php')+1);
+			$this->pageContents += fread($fp, filesize('./pages/'.$this->page.'.pg.php')+1);
 			fclose($fp);
 		}
 		else
@@ -65,6 +76,7 @@ class Page{
 	{
 		$oldOutput = ob_get_clean();
 		ob_start();
+        include $this->pageHeaderFullPath;
 		include $this->pageFullPath;
 		$myContent = ob_get_clean();
 		ob_start();
