@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="ContetType" content="text/html; charset=utf-8" />
-    <title>{lang:login-pageTitle}</title>
+    <title>{lang:pageName-pageTitle}</title>
     <link href="theme/default/main/css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
