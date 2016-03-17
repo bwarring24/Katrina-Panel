@@ -20,14 +20,14 @@
 
         if($DB->rowCount() >= 1){
             $validated = false;
-            echo "<span class='error'>{lang:register-userExists}</span>";
+            echo "<div class='error'>{lang:register-userExists}</div>";
         }
         
         if($validated){
             $sql = "INSERT INTO users (firstname, lastname, password, email) VALUES ('$firstName', '$lastName','$password', '$email')";
             
             if ($DB->query($sql)) {
-                echo "<span class='success'>{lang:register-success}</span>";
+                echo "<div class='success'>{lang:register-success}</div>";
             } else {
                 echo "Error: " . $sql . "<br>" . $DB->error();
             }

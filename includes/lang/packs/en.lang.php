@@ -34,7 +34,6 @@ $langPack['register']['lastName'] = "Last Name";
 $langPack['register']['email'] = "Email";
 $langPack['register']['submit'] = "Create Account";
 $langPack['register']['success'] = "Successful Registration!";
-$langPack['register']['userExists'] = "Email is already used.";
+$langPack['register']['userExists'] = "Email is already registered";
 
-$langPack['test']['MEOW'] = "MEOWOEOEOWOEOEOEOWE";
 ?>
