@@ -37,10 +37,9 @@ if (empty($_POST["firstName"])) {
       $passErr = "Password is required";
     } else {
       $name = $_POST["password"];
-      // check if name only contains letters and whitespace
-      if (!preg_match("/^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,20}$/",$name)) {
-        $passErr = "Password must be 8 characters long with:
-                    \n2 Uppercase letters\n1 Special character\n2 Digits \n3 Lowercase letters";
+      if (!preg_match("/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$/",$name)) {
+        $passErr = "Password must be minimum 5 characters long
+                  with at least 1 alphabet and 1 number  ";
       }
     }
 }
