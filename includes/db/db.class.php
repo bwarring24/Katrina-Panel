@@ -21,6 +21,8 @@ class DB{
         $this->user = $db['user'];
         $this->pass = $db['pass'];
         $this->name = $db['name'];
+        
+        $this->connect();
     }
 
     public function connect(){
@@ -33,9 +35,7 @@ class DB{
         }
     }    
     
-    public function query($sql){
-        $this->connect();
-        
+    public function query($sql){       
         if ($this->result = mysqli_query($this->conn, $sql)) {
             return true;
         }
@@ -55,6 +55,10 @@ class DB{
     
     public function nextRecord(){
         
+    }
+    
+    public function sanatize($string){
+        return mysqli_real_escape_string($this->conn, stripslashes($_POST['password']));
     }
     
     public function error(){

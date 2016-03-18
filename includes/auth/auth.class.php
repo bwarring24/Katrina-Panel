@@ -9,7 +9,7 @@ class Auth{
     
     // Generates the hash for the given input
     public function hashPass($pass, $salt){
-        return hash('ripemd160', $pass.$salt);
+        return crypt($pass, '$6$rounds=5000$'.$salt.'$');
     }
     
     // Pulls the has for the user from the database
@@ -21,6 +21,10 @@ class Auth{
     // return true or false
     public function compareHash(){
         
+    }
+    
+    public function genSalt(){
+        return mcrypt_create_iv(16, MCRYPT_DEV_URANDOM);
     }
     
     public function isAuthenticated(){
