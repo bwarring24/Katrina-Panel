@@ -46,7 +46,7 @@
         }
 
 
-        
+
         $firstName = $_POST['firstName'];
         $lastName = $_POST['lastName'];
         $password = $_POST['password'];
@@ -61,22 +61,22 @@
             $validated = false;
             $error .= "<div class='error'>{lang:register-userExists}</div>\n";
         }
-        
+
         if(!empty($error)){
             $validated = false;
             echo $error;
         }
-        
+
         if($validated){
             $sql = "INSERT INTO users (firstname, lastname, password, email) VALUES ('$firstName', '$lastName','$password', '$email')";
-            
+
             if ($DB->query($sql)) {
                 echo "<div class='success'>{lang:register-success}</div>";
             } else {
                 echo "Error: " . $sql . "<br>" . $DB->error();
             }
         }
-        
+
         $DB->close();
     }
 ?>
