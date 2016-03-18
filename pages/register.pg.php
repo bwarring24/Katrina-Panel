@@ -22,18 +22,13 @@
   </div>
 
   <div id="login">
-<<<<<<< HEAD
     <div class="frmLabel"><h2>{lang:register-password}</h2></div>
-    <div class="frmInput"><h2><input id="txtPass" type="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$" placeholder="i.e. I<3Microsoft" oninput="check(this)" size="20" required/><span class="error">*</span></h2></div>
+    <div class="frmInput"><h2><input id="txtPass" type="password" name="password" pattern="^([a-zA-Z0-9_+-,.:\/!@#$%\^*();\\|<>'?=-])+$" placeholder="i.e. I<3Microsoft" oninput="check(this)" size="20" required/><span class="error">*</span></h2></div>
   </div>
   
   <div id="login">
     <div class="frmLabel"><h2>{lang:register-retypePassword}</h2></div>
-    <div class="frmInput"><h2><input id="txtPass" type="password" name="password2" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$" placeholder="i.e. I<3Microsoft" oninput="check(this)" size="20" required/><span class="error">*</span></h2></div>
-=======
-    <div class="frmLabel"><h2>{lang:login-password}</h2></div>
-    <div class="frmInput"><h2><input id="txtPass" type="password" name="password" pattern="^([a-zA-Z0-9_+-,.:\/!@#$%\^*();\\|<>'?=-])+$" placeholder="i.e. I<3Microsoft" oninput="check(this)" size="20" required/></h2></div>
->>>>>>> eec0f4d3d6e1fb102a60ba4dbbf748a70180ffb0
+    <div class="frmInput"><h2><input id="txtPass" type="password" name="password2" pattern="^([a-zA-Z0-9_+-,.:\/!@#$%\^*();\\|<>'?=-])+$" placeholder="i.e. I<3Microsoft" oninput="check(this)" size="20" required/><span class="error">*</span></h2></div>
   </div>
 
   <div id="line">

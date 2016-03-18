@@ -34,30 +34,22 @@
             }
         }
 
-<<<<<<< HEAD
         if (empty($_POST["password"])) {
             $error .= "Password is required\n";
         } else {
             $pass = $_POST["password"];
-            if (!preg_match("/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$/", $pass)) {
-=======
-            if (empty($_POST["firstName"])) {
-                $error .= "Password is required\n";
-            } else {
-            $name = $_POST["password"];
-            if (!preg_match("/^([a-zA-Z0-9_+-,.:\/!@&#$%\^*();\\|<>'?=-])+$/",$name)) {
->>>>>>> eec0f4d3d6e1fb102a60ba4dbbf748a70180ffb0
+            if (!preg_match("/^([a-zA-Z0-9_+-,.:\/!@&#$%\^*();\\|<>'?=-])+$/", $pass)) {
                 $error .= "Password must be minimum 5 characters long with at least 1 alphabet and 1 number\n";
             }
         }
             
-        if(empty($_POST["password2"])){
-            $error .= "Password is required\n";
-        }else{
-            $pass1 = $_POST["password"];
+        if (empty($_POST["password2"])) {
+            $error .= "Must retype password\n";
+        } else {
+            $pass = $_POST["password"];
             $pass2 = $_POST["password2"];
-            if($pass1 != $pass2){
-                $error .= "Passwords do not match!";
+            if($pass != $pass2){
+                $error .= "Passwords don't match!";
             }
         }
 
