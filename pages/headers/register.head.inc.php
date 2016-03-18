@@ -1,13 +1,52 @@
 <?php
-  include 'pages/validate.php';
-
     $validated = true;
 
-    if(!empty($firstNameErr) || !empty($lastNameErr) || !empty($emailErr) || !empty($passErr)){
-        $validated = false;
-    }
-
     if (isset($_POST['btnSubmit'])) {
+        $error = null;
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            if (empty($_POST["firstName"])) {
+                $error .= "Name is required\n";
+            } else {
+                $name = $_POST["firstName"];
+                // check if name only contains letters and whitespace
+                if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+                $error .= "Only letters and white space allowed\n";
+                }
+            }
+
+            if (empty($_POST["firstName"])) {
+                $error .= "Name is required\n";
+            } else {
+                $name = $_POST["lastName"];
+                // check if name only contains letters and whitespace
+                if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+                    $error .= "Only letters and white space allowed\n";
+                }
+            }
+
+            if (empty($_POST["email"])) {
+                $error .= "Email is required\n";
+            } else {
+                $email = $_POST["email"];
+                // check if e-mail address is well-formed
+                if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $error .= "Invalid email format\n";
+                }
+            }
+
+            if (empty($_POST["firstName"])) {
+                $error .= "Password is required\n";
+            } else {
+            $name = $_POST["password"];
+            if (!preg_match("/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$/",$name)) {
+                $error .= "Password must be minimum 5 characters long with at least 1 alphabet and 1 number\n";
+            }
+        }
+        }
+
+
+        
         $firstName = $_POST['firstName'];
         $lastName = $_POST['lastName'];
         $password = $_POST['password'];
@@ -20,7 +59,12 @@
 
         if($DB->rowCount() >= 1){
             $validated = false;
-            echo "<div class='error'>{lang:register-userExists}</div>";
+            $error .= "<div class='error'>{lang:register-userExists}</div>\n";
+        }
+        
+        if(!empty($error)){
+            $validated = false;
+            echo $error;
         }
         
         if($validated){
