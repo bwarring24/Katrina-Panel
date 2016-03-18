@@ -39,7 +39,7 @@
                 $error .= "Password is required\n";
             } else {
             $name = $_POST["password"];
-            if (!preg_match("/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$/",$name)) {
+            if (!preg_match("/^([a-zA-Z0-9_+-,.:\/!@&#$%\^*();\\|<>'?=-])+$/",$name)) {
                 $error .= "Password must be minimum 5 characters long with at least 1 alphabet and 1 number\n";
             }
         }
