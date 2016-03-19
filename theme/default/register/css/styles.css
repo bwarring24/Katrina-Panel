@@ -80,17 +80,27 @@ h2 {
 }
 
 .success{
+    background-color: #CEF6CE;
+    border-color: #81F781;
+    border-width: 1px;
+    border-style: solid;
     text-align: center;
-    color: #33CC33;
-    width: 100%;
-    margin-top: 5px;
+    width: 412px;
+    margin: 5px;
 }
 
 .error{
+    background-color: #F5A9A9;
+    border-color: #FF0000;
+    border-width: 1px;
+    border-style: solid;
     text-align: center;
+    width: 412px;
+    margin: 5px;
+}
+
+.required{
     color: #FF0000;
-    width: 100%;
-    margin-top: 5px;
 }
 
 #login{

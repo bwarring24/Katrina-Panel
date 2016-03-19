@@ -14,7 +14,7 @@
             }
         }
 
-        if (empty($_POST["firstName"])) {
+        if (empty($_POST["lastName"])) {
             $error .= "Name is required\n";
         } else {
             $name = $_POST["lastName"];
@@ -59,11 +59,11 @@
         
         
         $salt = $Auth->genSalt();
-        $firstName = $_POST['firstName'];
-        $lastName = $_POST['lastName'];
+        $firstName = $DB->sanatize($_POST['firstName']);
+        $lastName = $DB->sanatize($_POST['lastName']);
         $password = $Auth->hashPass($DB->sanatize($_POST['password']), $salt);
         $password2 = $Auth->hashPass($DB->sanatize($_POST['password']), $salt);
-        $email = $_POST['email'];
+        $email = $DB->sanatize($_POST['email']);
         $date = date('Y-m-d');
         
         $sql = "SELECT * FROM users WHERE email='".$email."'";
@@ -71,13 +71,13 @@
 
         if($DB->rowCount() >= 1){
             $validated = false;
-            $error .= "<div class='error'>{lang:register-userExists}</div>\n";
+            $error .= "{lang:register-userExists}\n";
         }
 
         // Check to see if an errors were reported
         if(!empty($error)){
             $validated = false;
-            echo $error;
+            echo "<div class='error'>".$error."</div>";
         }
 
         // If validated is true we can continue and add the user into the database
