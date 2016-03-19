@@ -23,14 +23,17 @@ class Auth{
         
     }
     
+    // Create a 16 character random salt
     public function genSalt(){
         return mcrypt_create_iv(16, MCRYPT_DEV_URANDOM);
     }
+    
     
     public function isAuthenticated(){
         
     }
     
+    // Gets the current instance of the class
     public static function getInstance(){
         if(!self::$instance){
             self::$instance = new Auth();

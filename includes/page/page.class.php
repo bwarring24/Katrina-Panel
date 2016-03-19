@@ -72,6 +72,7 @@ class Page{
 		}
     }
     
+    // Create our page
     public function execPage()
 	{
 		$oldOutput = ob_get_clean();
@@ -87,10 +88,12 @@ class Page{
 		return $myContent;
 	}
     
+    // Returns the current page
     public function getPage(){
         return $this->page;
     }
     
+    // Returns the instance of the class
     public static function getInstance(){
         if(!self::$instance){
             self::$instance = new Page();

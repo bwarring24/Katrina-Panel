@@ -58,12 +58,14 @@ class Tpl{
         
     }
     
+    // Load our page where {page} exists in our template
     public function display(){
         echo $this->template[0];
         echo $this->Page->execPage();
         echo $this->template[1];
     }
     
+    // Gets current instance of the class
     public static function getInstance(){
         if(!self::$instance){
             self::$instance = new Tpl();

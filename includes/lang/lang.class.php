@@ -37,10 +37,12 @@ class Lang{
         }
     }
     
+    // Return the language string from the language pack
     public function getLangString($subject, $description){
         return $this->langPack[$subject][$description];
     }
     
+    // Parses through the document and replaces all occurences of {lang:pageName-blockDesc}
     public function replaceBlock($string){
         if(preg_match_all("/{(lang:pageName[^{]*)}/i", $string, $array)){
             $page = null;
@@ -88,6 +90,7 @@ class Lang{
 		}  
     }    
     
+    // Returns the instance of the class
     public static function getInstance(){
         if(!self::$instance){
             self::$instance = new Lang();
