@@ -21,7 +21,7 @@
         </div>
         
         <div id="headerBanner">
-            <img src="theme/default/register/images/banner.png" alt="Katrina Panel" />
+            <a href="index.php"><img src="theme/default/register/images/banner.png" alt="Katrina Panel" /></a>
         </div>
         
         

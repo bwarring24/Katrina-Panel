@@ -85,7 +85,7 @@ h2 {
     border-width: 1px;
     border-style: solid;
     text-align: center;
-    width: 412px;
+    padding: 5px;
     margin: 5px;
 }
 
@@ -95,7 +95,7 @@ h2 {
     border-width: 1px;
     border-style: solid;
     text-align: center;
-    width: 412px;
+    padding: 5px;
     margin: 5px;
 }
 
@@ -119,6 +119,8 @@ h2 {
     display: inline-block;
     margin: 0px;
 }
+
+
 
 /* Footer [Start] */
 
