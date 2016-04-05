@@ -37,7 +37,9 @@ class DB{
     }    
     
     // Execute query
-    public function query($sql){       
+    public function query($sql){
+        $sql = sanatize($sql);
+         
         if ($this->result = mysqli_query($this->conn, $sql)) {
             return true;
         }
