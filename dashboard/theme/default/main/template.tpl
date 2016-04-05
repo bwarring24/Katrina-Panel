@@ -19,11 +19,15 @@
             </div>
             
             <div id="shortcuts">
-            
+                <a href="dashboard/"><img src="theme/default/main/images/home-icon.gif" alt="" /></a>
             </div>
             
             <div id="search">
-                
+                <img src="theme/default/main/images/search-left.png" alt="" />
+                <form name="frmSearch" method="POST">
+                    <input type="text" name="txtQuery" />
+                </form>
+                <img src="theme/default/main/images/search-right.png" alt="" />
             </div>
             
             <div id="rightRivet">
