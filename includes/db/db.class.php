@@ -38,13 +38,7 @@ class DB{
     
     // Execute query
     public function query($sql){
-        $sql = sanatize($sql);
-         
-        if ($this->result = mysqli_query($this->conn, $sql)) {
-            return true;
-        }
-        
-        return false;
+        $this->result = mysqli_query($this->conn, $sql)or die(mysqli_error($this->conn));
     }
     
     // Return the row count from the previous query
@@ -54,9 +48,9 @@ class DB{
     
     // Fetch a single record from the last query
     public function singleRecord(){
-        $this->Record = mysql_fetch_array($this->result);
-        $stat = is_array($this->Record);
-        return $stat;
+        $this->record = $this->result->fetch_assoc();
+        return $this->record;
+        
     }
     
     // Grab the next record from the previous query

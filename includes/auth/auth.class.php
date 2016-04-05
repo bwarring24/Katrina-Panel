@@ -12,29 +12,29 @@ class Auth{
     public function __construct(){
         $this->DB = DB::getInstance();
         
-        $this->email = $_SESSION['email'];
-        $this->password = $_SESSION['password'];
-        
-        $sql = "SELECT email, salt, password WHERE email=$this->email";
-        
-        $this->DB->query($sql);
-        
-        $this->authenticated = compareHash($this->DB->singleRecord());
-        
-        $this->DB->close();
+        $this->authenticate();
     }
     
     public function authenticate(){
-        $this->email = $_SESSION['email'];
-        $this->password = $_SESSION['password'];
-        
-        $sql = "SELECT email, salt, password WHERE email=$this->email";
-        
-        $this->DB->query($sql);
-        
-        $this->authenticated = compareHash($this->DB->singleRecord());
-        
-        $this->DB->close();
+        if(!isset($_SESSION['email']) || !isset($_SESSION['password'])){
+            // User is not yet logged in so don't do anything
+        }else{
+            $this->email = $_SESSION['email'];
+            $this->password = $this->hashPass($_SESSION['password'], $this->getSalt($this->email));
+            
+            echo "EMAIL: " . $this->email . "<br />";
+            echo "PASSWORD: " . $this->password . "<br />";
+            echo "SALT: " . $this->getSalt($this->email) . "<br />";
+            echo "DATABASE: " . print_r($this->DB->singleRecord());
+            
+            $sql = "SELECT email, salt, password FROM users WHERE email='".$this->email."'";
+            
+            $this->DB->query($sql);
+            
+            $this->authenticated = $this->compareHash($this->DB->singleRecord());
+            
+            $this->DB->close();
+        }
     }
     
     // Generates the hash for the given input
@@ -44,10 +44,20 @@ class Auth{
     
     // Pulls the hash for the user from the database
     public function getHash($email){
-        $sql = "SELECT password FROM users WHERE email=$email";
+        $sql = "SELECT * FROM users WHERE email='".$email."'";
         
         $this->DB->query($sql);
-        return $this->DB->singleRecord();
+        $row = $this->DB->singleRecord();
+        return $row['password'];
+        
+    }
+    
+    public function getSalt($email){
+        $sql = "SELECT * FROM users WHERE email='".$email."'";
+        
+        $this->DB->query($sql);
+        $row = $this->DB->singleRecord();
+        return $row['salt'];
     }
     
     // Compares the two hashes

@@ -7,8 +7,8 @@
     </div>
      
     <div id="login">
-        <div class="frmLabel"><h2>{lang:login-username}</h2></div>
-        <div class="frmInput"><h2><input id="txtUser" type="text" name="username" size="20" /></h2></div>
+        <div class="frmLabel"><h2>{lang:login-email}</h2></div>
+        <div class="frmInput"><h2><input id="txtEmail" type="text" name="email" size="20" /></h2></div>
     </div>
         
     <div id="login">

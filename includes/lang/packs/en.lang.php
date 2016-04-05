@@ -17,7 +17,7 @@ $langPack['coreError'][404] = "The resource requested could not be found.";
 // Login Pack
 $langPack['login']['pageTitle'] = "Login - Katrina Panel";
 $langPack['login']['title'] = "Login";
-$langPack['login']['username'] = "Username";
+$langPack['login']['email'] = "Email";
 $langPack['login']['password'] = "Password";
 $langPack['login']['submit'] = "Login";
 $langPack['login']['logoutMsg'] = "You have been logged out.";
