@@ -50,7 +50,6 @@ class DB{
     public function singleRecord(){
         $this->record = $this->result->fetch_assoc();
         return $this->record;
-        
     }
     
     // Grab the next record from the previous query

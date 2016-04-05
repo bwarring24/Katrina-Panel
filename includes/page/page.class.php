@@ -24,8 +24,9 @@ class Page{
         $this->Auth = Auth::getInstance();
         
         if($this->Auth->isAuthenticated()){
+            session_destroy();
             // User is logged in
-            echo "USER IS AUTHENTICATED";
+            //echo "USER IS AUTHENTICATED";
         }else{
             // User isn't logged in
             
@@ -50,6 +51,11 @@ class Page{
                 // No page request specified so lets default to the login page
                 $this->page = "login";
                 $this->pageFullPath = "pages/login.pg.php";
+                
+                // Now lets check to see if there is a header
+                    if(file_exists("pages/headers/" .$this->page. ".head.inc.php")){
+                        $this->pageHeaderFullPath = "pages/headers/" .$this->page. ".head.inc.php";
+                    }
             }
         }
         
