@@ -38,4 +38,8 @@ $langPack['register']['submit'] = "Create Account";
 $langPack['register']['success'] = "Successful Registration!";
 $langPack['register']['userExists'] = "Email is already registered";
 
+// Dashboard Pack
+$langPack['dashboard']['pageTitle'] = "Dashboard - Katrina Panel";
+$langPack['dashboard']['title'] = "Dashboard";
+
 ?>
