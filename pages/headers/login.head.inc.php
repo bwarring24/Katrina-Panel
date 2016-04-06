@@ -9,18 +9,10 @@
         
         $Auth->authenticate();
         
-        if($Auth->isAuthenticated()){
-            // We are authenticated. Lets relocate to top secret pages
-            header('Location:dashboard/');
-        }else{
+        if(!$Auth->isAuthenticated()){
             $error .= "{lang:coreError-401}";
         }
     }
     
     echo "<div class='error'>".$error."</div>";
-    
-    if($Auth->isAuthenticated()){
-        // User doesn't need to login just redirect to the top secret pages
-        header('Location:dashboard/');
-    }
 ?>

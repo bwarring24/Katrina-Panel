@@ -22,11 +22,6 @@ class Auth{
             $this->email = $_SESSION['email'];
             $this->password = $this->hashPass($_SESSION['password'], $this->getSalt($this->email));
             
-            echo "EMAIL: " . $this->email . "<br />";
-            echo "PASSWORD: " . $this->password . "<br />";
-            echo "SALT: " . $this->getSalt($this->email) . "<br />";
-            echo "DATABASE: " . print_r($this->DB->singleRecord());
-            
             $sql = "SELECT email, salt, password FROM users WHERE email='".$this->email."'";
             
             $this->DB->query($sql);
