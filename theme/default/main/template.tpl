@@ -24,24 +24,32 @@
                 Intranet Server
             </div>
             
-            <div id="shortcuts">
-                <img src="theme/default/main/images/home-icon.png" alt="Home" />
-            </div>
             
             <div id="search">
+                <div id="searchLeft">
+                    <img src="theme/default/main/images/searchLeft.png" alt="" />
+                </div>
                 
+                <div id="searchRight">
+                    <img src="theme/default/main/images/searchRight.png" alt="" />
+                </div>
+                
+                <div id="searchCenter">
+                    <form name="frmSearch" method="GET">
+                        <input id="txtQuery type="text" name="query" style="background-color: #7C7B7B; height: 20px; color: #FFFFFF; border: 0px;" />
+                    </form>
+                </div>
             </div>
             
-            
-            
+            <div id="shortcuts">
+                <img src="theme/default/main/images/home-icon.png" alt="Home" />
+            </div> 
         </div>
         
-        <a href="index.php">
-            <div id="headerBanner">
-                <img id="bannerLeft" src="theme/default/main/images/bannerLeft.png" alt="Katrina Panel" />
-                <img id="bannerRight" src="theme/default/main/images/bannerRight.png" alt="Katrina Panel" />
-            </div>
-        </a>
+        <div id="headerBanner">
+            <img id="bannerLeft" src="theme/default/main/images/bannerLeft.png" alt="Katrina Panel" />
+            <img id="bannerRight" src="theme/default/main/images/bannerRight.png" alt="Katrina Panel" />
+        </div>
         
         
         <div id="content">
