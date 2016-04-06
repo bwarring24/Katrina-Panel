@@ -25,10 +25,9 @@ class Page{
         
         if($this->Auth->isAuthenticated()){
             // User is logged in
-            echo "HEY LOOK AT ME! I DID IT!";
             if(isset($_GET['p'])){
                 $page = $_GET['p'];
-                
+                echo 'This is my page1';
                 if(file_exists("pages/dashboard/" .$page. ".pg.php")){
                     // Now lets check to see if there is a header
                     if(file_exists("pages/dashboard/headers/" .$page. ".head.inc.php")){
@@ -44,7 +43,7 @@ class Page{
                     $this->pageFullPath = "pages/dashboard/home.pg.php";
                 }
             }else{
-                // Page doesnt exist redirect to the home page
+                // No page was specified. Default to home page
                 $this->page = "home";
                 $this->pageFullPath = "pages/dashboard/home.pg.php";
             }
@@ -78,9 +77,7 @@ class Page{
                     $this->pageHeaderFullPath = "pages/headers/" .$this->page. ".head.inc.php";
                 }
             }
-        }
-        
-        
+        }       
     }
     
     // Create our page
