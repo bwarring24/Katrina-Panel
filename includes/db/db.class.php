@@ -38,7 +38,11 @@ class DB{
     
     // Execute query
     public function query($sql){
-        $this->result = mysqli_query($this->conn, $sql)or die(mysqli_error($this->conn));
+        if($this->result = mysqli_query($this->conn, $sql)){
+            return true;   
+        }
+        
+        return false;
     }
     
     // Return the row count from the previous query

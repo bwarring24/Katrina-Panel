@@ -12,10 +12,13 @@ class Lang{
     private static $instance;
     private $coreError;
     private $lang;
+    private $Auth;
     private $langPack;
     
     private function __construct(){
         // TODO allow users to change their language via settings
+        
+        $this->Auth = Auth::getInstance();
         
         //Temporary variable until user settings override
         require_once("includes/config.inc.php");
@@ -46,10 +49,15 @@ class Lang{
     public function replaceBlock($string){
         if(preg_match_all("/{(lang:pageName[^{]*)}/i", $string, $array)){
             $page = null;
+            
             if(isset($_GET['p'])){
                 $page = $_GET['p'];
             }else{
-                $page = "login";
+                if($this->Auth->isAuthenticated()){
+                    $page = "home";
+                }else{
+                    $page = "login";    
+                }
             }
             
             $array = $array[0];

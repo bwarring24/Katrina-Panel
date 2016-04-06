@@ -11,6 +11,8 @@
         
         if(!$Auth->isAuthenticated()){
             $error .= "{lang:coreError-401}";
+        }else{
+            header('Location:' . $_SERVER['HTTP_REFERER']);
         }
     }
     
