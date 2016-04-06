@@ -1,3 +1,71 @@
-Welcome to the home page.
+<div id="sidebar"> 
+    <div id="leftRivet">
+        <img src="theme/default/main/images/rivets.png" alt="" />
+    </div>
+                    
+    <div id="rightRivet">
+        <img src="theme/default/main/images/rivets.png" alt="" />
+    </div>
+                    
+    <div id="headerTitle">
+        {lang:home-statistics}
+    </div>
+</div>
 
-<h1>{lang:home-title}</h1>
+<div class="module"> 
+    <div id="leftRivet">
+        <img src="theme/default/main/images/rivets.png" alt="" />
+    </div>
+                    
+    <div id="rightRivet">
+        <img src="theme/default/main/images/rivets.png" alt="" />
+    </div>
+                    
+    <div id="headerTitle">
+        {lang:home-userModules}
+    </div>
+</div>
+
+<br />
+
+<div class="module">
+    <div id="leftRivet">
+        <img src="theme/default/main/images/rivets.png" alt="" />
+    </div>
+                    
+    <div id="rightRivet">
+        <img src="theme/default/main/images/rivets.png" alt="" />
+    </div>
+                    
+    <div id="headerTitle">
+        {lang:home-fileModules}
+    </div>
+</div>
+<br />
+<div class="module">
+    <div id="leftRivet">
+        <img src="theme/default/main/images/rivets.png" alt="" />
+    </div>
+                    
+    <div id="rightRivet">
+        <img src="theme/default/main/images/rivets.png" alt="" />
+    </div>
+                    
+    <div id="headerTitle">
+        {lang:home-packages}
+    </div>
+</div>
+<br />
+<div class="module">
+    <div id="leftRivet">
+        <img src="theme/default/main/images/rivets.png" alt="" />
+    </div>
+                    
+    <div id="rightRivet">
+        <img src="theme/default/main/images/rivets.png" alt="" />
+    </div>
+                    
+    <div id="headerTitle">
+        {lang:home-thirdPartyPackages}
+    </div>
+</div>

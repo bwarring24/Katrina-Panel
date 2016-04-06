@@ -75,6 +75,11 @@ class Auth{
         return $this->authenticated;
     }
     
+    public function deAuth(){
+        $this->authenticated = false;
+        session_destroy();
+    }
+    
     // Gets the current instance of the class
     public static function getInstance(){
         if(!self::$instance){
