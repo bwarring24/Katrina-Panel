@@ -24,9 +24,34 @@ class Page{
         $this->Auth = Auth::getInstance();
         
         if($this->Auth->isAuthenticated()){
-            session_destroy();
             // User is logged in
-            //echo "USER IS AUTHENTICATED";
+            if(isset($_GET['p'])){
+                $page = $_GET['p'];
+                
+                if(file_exists("pages/dashboard/" .$page. ".pg.php")){
+                    // Now lets check to see if there is a header
+                    if(file_exists("pages/dashboard/headers/" .$page. ".head.inc.php")){
+                        $this->pageHeaderFullPath = "pages/headers/" .$page. ".head.inc.php";
+                    }
+                    
+                    // Page exists so we can set the class var now
+                    $this->page = $page;
+                    $this->pageFullPath = "pages/dashboard/" .$page. ".pg.php";
+                }else{
+                    // Page doesnt exist redirect to login
+                    $this->page = "home";
+                    $this->pageFullPath = "pages/dashboard/home.pg.php";
+                }
+            }else{
+                // No page request specified so lets default to the login page
+                $this->page = "home";
+                $this->pageFullPath = "pages/dashboard/home.pg.php";
+                
+                // Now lets check to see if there is a header
+                if(file_exists("pages/dashboard/headers/" .$this->page. ".head.inc.php")){
+                    $this->pageHeaderFullPath = "pages/headers/" .$this->page. ".head.inc.php";
+                }
+            }
         }else{
             // User isn't logged in
             
@@ -43,7 +68,7 @@ class Page{
                     $this->page = $page;
                     $this->pageFullPath = "pages/" .$page. ".pg.php";
                 }else{
-                    // Page doesnt exist for un-athenticated users; Redirect to login\
+                    // Page doesnt exist redirect to login
                     $this->page = "login";
                     $this->pageFullPath = "pages/login.pg.php";
                 }
@@ -53,9 +78,9 @@ class Page{
                 $this->pageFullPath = "pages/login.pg.php";
                 
                 // Now lets check to see if there is a header
-                    if(file_exists("pages/headers/" .$this->page. ".head.inc.php")){
-                        $this->pageHeaderFullPath = "pages/headers/" .$this->page. ".head.inc.php";
-                    }
+                if(file_exists("pages/headers/" .$this->page. ".head.inc.php")){
+                    $this->pageHeaderFullPath = "pages/headers/" .$this->page. ".head.inc.php";
+                }
             }
         }
         

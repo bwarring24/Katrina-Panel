@@ -22,15 +22,15 @@ class Tpl{
         
         if($this->Auth->isAuthenticated()){
             // User is logged in so we can load the template for the logged in pages
-            //if(file_exists("theme/default/main/template.tpl")){
-            //    $fp = fopen("theme/default/main/template.tpl", "r");
-            //    $contents = fread($fp, filesize("theme/default/main/template.tpl")+1);
-            //    fclose($fp);
+            if(file_exists("theme/default/main/template.tpl")){
+                $fp = fopen("theme/default/main/template.tpl", "r");
+                $contents = fread($fp, filesize("theme/default/main/template.tpl")+1);
+                fclose($fp);
                 
-            //    $this->template = explode("{page}", $this->Lang->replaceBlock($contents));
-            //}else{
+                $this->template = explode("{page}", $this->Lang->replaceBlock($contents));
+            }else{
                 // Logged in page template doesn't exist. Throw error and report to coreError service
-            //}
+            }
         }else{
             // User is not logged in. Load login page
             
