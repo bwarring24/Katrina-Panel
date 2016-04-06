@@ -44,7 +44,7 @@
         <div id="foot">
             <a href="">KatrinaPanel</a> |
             <a href="">Documentation</a> |
-            <a href="?p=logout">Logout</a>
+            <a href="index.php?p=logout">Logout</a>
             
             <br />
             
