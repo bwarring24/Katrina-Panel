@@ -42,4 +42,8 @@ $langPack['register']['userExists'] = "Email is already registered";
 // Dashboard Home Pack
 $langPack['home']['pageTitle'] = "Dashboard - Katrina Panel";
 $langPack['home']['title'] = "Dashboard";
+
+//Profile 
+$langPack['profile']['pageTitle'] = "Profile";
+$langPack['profile']['title'] = "Profile";
 ?>
