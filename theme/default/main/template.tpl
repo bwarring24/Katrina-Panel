@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="ContetType" content="text/html; charset=utf-8" />
     <title>{lang:pageName-pageTitle}</title>
-    <link href="theme/default/main/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="theme/default/main/css/main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     
@@ -14,27 +14,34 @@
                 <img src="theme/default/main/images/rivets.png" alt="" />
             </div>
             
+            
+            <div id="rightRivet">
+                <img src="theme/default/main/images/rivets.png" alt="" />
+            </div>
+            
+            
             <div id="headerTitle">
                 Intranet Server
             </div>
             
             <div id="shortcuts">
-            
+                <img src="theme/default/main/images/home-icon.png" alt="Home" />
             </div>
             
             <div id="search">
                 
             </div>
             
-            <div id="rightRivet">
-                <img src="theme/default/main/images/rivets.png" alt="" />
-            </div>
+            
             
         </div>
         
-        <div id="headerBanner">
-            <img src="theme/default/main/images/banner.png" alt="Katrina Panel" />
-        </div>
+        <a href="index.php">
+            <div id="headerBanner">
+                <img id="bannerLeft" src="theme/default/main/images/bannerLeft.png" alt="Katrina Panel" />
+                <img id="bannerRight" src="theme/default/main/images/bannerRight.png" alt="Katrina Panel" />
+            </div>
+        </a>
         
         
         <div id="content">
