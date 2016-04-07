@@ -29,3 +29,67 @@
             </div>
     </div>
 </div>
+
+<div class="modules">
+    <div class="header">
+        <div id="leftRivet">
+            <img src="theme/default/main/images/rivets.png" alt="" />
+        </div>
+                            
+        <div id="rightRivet">
+            <img src="theme/default/main/images/rivets.png" alt="" />
+        </div>
+                            
+        <div id="headerTitle">
+            {lang:home-fileModules}
+        </div>
+    </div>
+    
+    <div class="module">
+        <img class="icon" src="theme/default/main/images/passwordprotect.png" alt="{lang:mod-passwordProtect}" />
+        <div class="caption">{lang:mod-passwordProtect}</div>
+    </div>
+    
+    <div class="module">
+        <img class="icon" src="theme/default/main/images/errorpages.png" alt="{lang:mod-errorPages}" />
+        <div class="caption">{lang:mod-errorPages}</div>
+    </div>
+    
+    <div class="module">       
+        <img class="icon" src="theme/default/main/images/filemanager.png" alt="{lang:mod-fileManager}" />
+        <div class="caption">{lang:mod-fileManager}
+            </div>
+    </div>
+</div>
+
+<div class="modules">
+    <div class="header">
+        <div id="leftRivet">
+            <img src="theme/default/main/images/rivets.png" alt="" />
+        </div>
+                            
+        <div id="rightRivet">
+            <img src="theme/default/main/images/rivets.png" alt="" />
+        </div>
+                            
+        <div id="headerTitle">
+            {lang:home-packages}
+        </div>
+    </div>
+</div>
+
+<div class="modules">
+    <div class="header">
+        <div id="leftRivet">
+            <img src="theme/default/main/images/rivets.png" alt="" />
+        </div>
+                            
+        <div id="rightRivet">
+            <img src="theme/default/main/images/rivets.png" alt="" />
+        </div>
+                            
+        <div id="headerTitle">
+            {lang:home-thirdPartyPackages}
+        </div>
+    </div>
+</div>

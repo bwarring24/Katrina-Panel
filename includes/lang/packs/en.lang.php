@@ -64,9 +64,13 @@ $langPack['home']['packages'] = "Packages";
 $langPack['home']['thirdPartyPackages'] = "Third Party Packages";
 
 
-// Profile Pack
+//Profile
 $langPack['profile']['pageTitle'] = "Profile";
-$langPack['profile']['title'] = "Profile";
+$langPack['profile']['title'] = "Your Profile Information";
+$langPack['profile']['date'] = "Account Created: ";
+$langPack['profile']['delete'] = "Delete Account";
+$langPack['profile']['change'] = "Change Password";
+
 
 
 // Delete Pack

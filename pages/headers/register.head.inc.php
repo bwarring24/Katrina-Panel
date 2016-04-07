@@ -3,7 +3,7 @@
 
     if (isset($_POST['btnSubmit'])) {
         $error = null;
-        
+
         if (empty($_POST["firstName"])) {
             $error .= "{lang:register-firstNameRequired}\n";
         } else {
@@ -42,7 +42,7 @@
                 $error .= "{lang:coreError-102}\n";
             }
         }
-            
+
         if (empty($_POST["password2"])) {
             $error .= "{lang:register-passRetype}\n";
         } else {
@@ -56,8 +56,8 @@
         // Lets invoke our two class instances since we will need them later
         $Auth = Auth::getInstance();
         $DB = DB::getInstance();
-        
-        
+
+
         $salt = $Auth->genSalt();
         $firstName = $DB->sanatize($_POST['firstName']);
         $lastName = $DB->sanatize($_POST['lastName']);
@@ -65,7 +65,7 @@
         $password2 = $Auth->hashPass($DB->sanatize($_POST['password']), $salt);
         $email = $DB->sanatize($_POST['email']);
         $date = date('Y-m-d');
-        
+
         $sql = "SELECT * FROM users WHERE email='".$email."'";
         $DB->query($sql);
 

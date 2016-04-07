@@ -31,7 +31,7 @@ class Page{
                 if(file_exists("pages/dashboard/" .$page. ".pg.php")){
                     // Now lets check to see if there is a header
                     if(file_exists("pages/dashboard/headers/" .$page. ".head.inc.php")){
-                        $this->pageHeaderFullPath = "pages/headers/" .$page. ".head.inc.php";
+                        $this->pageHeaderFullPath = "pages/dashboard/headers/" .$page. ".head.inc.php";
                     }
                     
                     // Page exists so we can set the class var now
