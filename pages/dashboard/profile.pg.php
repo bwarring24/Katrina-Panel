@@ -16,6 +16,6 @@
 <div class="frmLabel" align="left"><h2>{lang:profile-date}</h2></div>
 <div align= "center"><?php echo $date ?></div>
 
-<div align="center"><a href="index.php?p=change_pas"> {lang:profile-change}</a></div>
+<div align="center"><a href="index.php?p=changePassword"> {lang:profile-change}</a></div>
 
-<div align="center"><a  href="index.php?p=delete_ac">{lang:profile-delete}</a></div>
+<div align="center"><a  href="index.php?p=deleteAccount">{lang:profile-delete}</a></div>
