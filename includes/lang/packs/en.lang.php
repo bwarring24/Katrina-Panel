@@ -43,7 +43,13 @@ $langPack['register']['userExists'] = "Email is already registered";
 $langPack['home']['pageTitle'] = "Dashboard - Katrina Panel";
 $langPack['home']['title'] = "Dashboard";
 
-//Profile 
+//Profile
 $langPack['profile']['pageTitle'] = "Profile";
-$langPack['profile']['title'] = "Profile";
+$langPack['profile']['title'] = "Your Profile Information";
+$langPack['profile']['date'] = "Account Created: ";
+$langPack['profile']['delete'] = "Delete Account";
+$langPack['profile']['change'] = "Change Password";
+
+//Delete
+$langPack['delete']['success'] = "Account successfully deleted!";
 ?>
