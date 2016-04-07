@@ -39,11 +39,21 @@ class Page{
                     $this->pageFullPath = "pages/dashboard/" .$page. ".pg.php";
                 }else{
                     // Page doesnt exist redirect to the home page
+                    if(file_exists("pages/dashboard/headers/home.head.inc.php")){
+                        $this->pageHeaderFullPath = "pages/dashboard/headers/home.head.inc.php";
+                    }
+                
+                    
                     $this->page = "home";
                     $this->pageFullPath = "pages/dashboard/home.pg.php";
                 }
             }else{
                 // No page was specified. Default to home page
+                // Now lets check to see if there is a header
+                if(file_exists("pages/dashboard/headers/home.head.inc.php")){
+                    $this->pageHeaderFullPath = "pages/dashboard/headers/home.head.inc.php";
+                }
+                
                 $this->page = "home";
                 $this->pageFullPath = "pages/dashboard/home.pg.php";
             }
@@ -64,6 +74,10 @@ class Page{
                     $this->pageFullPath = "pages/" .$page. ".pg.php";
                 }else{
                     // Page doesnt exist redirect to login
+                    if(file_exists("pages/headers/login.head.inc.php")){
+                        $this->pageHeaderFullPath = "pages/headers/login.head.inc.php";
+                    }
+                
                     $this->page = "login";
                     $this->pageFullPath = "pages/login.pg.php";
                 }

@@ -67,7 +67,33 @@
                 </div>
             </div>
             
-            My future content
+            <div class="c1">
+                <div class="row">
+                    <div class="label" align="left" ><h3>{lang:mod-serverNameTitle}</h3></div>
+                    <div class="description">{lang:mod-serverName}</div>
+                </div>
+            </div>
+            
+            <div class="c2">
+                <div class="row">
+                    <div class="label" align="left" ><h3>{lang:mod-panelVersionTitle}</h3></div>
+                    <div class="description">{lang:mod-panelVersion}</div>
+                </div>
+            </div>
+            
+            <div class="c1">
+                <div class="row">
+                    <div class="label" align="left" ><h3>{lang:mod-apacheVersionTitle}</h3></div>
+                    <div class="description">{lang:mod-apacheVersion}</div>
+                </div>
+            </div>
+            
+            <div class="c2">
+                <div class="row">
+                    <div class="label" align="left" ><h3>{lang:mod-phpVersionTitle}</h3></div>
+                    <div class="description">{lang:mod-phpVersion}</div>
+                </div>
+            </div>
         </div>
 
         <div id="sidebarRight">
@@ -85,7 +111,32 @@
                 </div>
             </div>
             
-            My future content
+            <div class="c1">
+                <div class="row">
+                    <div class="label" align="left" ><h3>{lang:mod-nameTitle}</h3></div>
+                    <div class="description">{lang:mod-name}</div>
+                </div>
+            </div>
+            
+            <div class="c2">
+                <div class="row">
+                    <div class="label" align="left" ><h3>{lang:mod-emailTitle}</h3></div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="c1">
+                <div class="row">
+                    <a href="?p=profile"><div align="center" class="label" align="left" ><h3>{lang:mod-viewProfile}</h3></div></a>
+                </div>
+            </div>
+            
+            <div class="c2">
+                <div class="row">
+                    <a href="?p=logout"><div align="center" class="label" align="left" ><h3>{lang:mod-logout}</h3></div></a>
+                </div>
+            </div>
         </div>
         
         
@@ -93,7 +144,10 @@
             {page}
         </div>
         
-        <div id="foot">
+        <br />
+        <br />
+        
+        <div id="footer">
             <a href="">KatrinaPanel</a> |
             <a href="">Documentation</a> |
             <a href="index.php?p=logout">Logout</a>

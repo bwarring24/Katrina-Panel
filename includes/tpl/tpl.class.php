@@ -32,13 +32,20 @@ class Tpl{
                 // Logged in page template doesn't exist. Throw error and report to coreError service
             }
         }else{
-            // User is not logged in. Load login page
+            // User is not logged in.
             
             if(isset($_GET['p'])){
                 // Specific page is requested
                 if(file_exists("theme/default/" .$_GET['p']. "/template.tpl")){
                     $fp = fopen("theme/default/" .$_GET['p']. "/template.tpl", "r");
                     $contents = fread($fp, filesize("theme/default/" .$_GET['p']. "/template.tpl")+1);
+                    fclose($fp);
+                    
+                    $this->template = explode("{page}", $this->Lang->replaceBlock($contents));
+                }else{
+                    // default to login theme
+                    $fp = fopen("theme/default/login/template.tpl", "r");
+                    $contents = fread($fp, filesize("theme/default/login/template.tpl")+1);
                     fclose($fp);
                     
                     $this->template = explode("{page}", $this->Lang->replaceBlock($contents));

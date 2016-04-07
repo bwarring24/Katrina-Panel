@@ -9,14 +9,19 @@
         $salt = $Auth->getSalt($email);
         $newSalt = $Auth->genSalt();
         $password = $Auth->hashPass($DB->sanatize($_POST['currentPassword']), $salt);
-
-        $Auth->authenticate();
-        if($Auth->isAuthenticated()) {
+        
+        
+        if($Auth->compareHash($password)) {
             $password2 = $Auth->hashPass($DB->sanatize($_POST['newPassword']), $newSalt);
             $DB->query("UPDATE users set password='" . $password2 . "',salt='" . $newSalt . "' WHERE email='" . $email . "'");
-            $message = "Password Changed";
+            
+           // $_SESSION['password'] = $password2;
+            //$Auth->authenticate();
+            echo "<div class='success'>{lang:changePassword-success}</div>";
+            
+            
         } else{
-            $message = "Current Password is not correct"; 
+            echo "<div class='error'>{lang:changePassword-incorrectPassword}</div>";
         }
     }
 ?>

@@ -22,13 +22,27 @@ class Auth{
             $this->email = $_SESSION['email'];
             $this->password = $this->hashPass($_SESSION['password'], $this->getSalt($this->email));
             
-            $sql = "SELECT email, salt, password FROM users WHERE email='".$this->email."'";
+            $sql = "SELECT email, salt, password, language FROM users WHERE email='".$this->email."'";
             
             $this->DB->query($sql);
-            
-            $this->authenticated = $this->compareHash($this->DB->singleRecord());
+            $row = $this->DB->singleRecord();
+            $this->authenticated = $this->compareHash($row['password']);
             
             $this->DB->close();
+        }
+    }
+    
+    public function updateIP(){
+        if($this->authenticated){
+            $sql = "UPDATE users SET lastIP='".$_SERVER['REMOTE_ADDR']."' WHERE email='".$this->email."'";
+            $this->DB->query($sql);
+        }
+    }
+    
+    public function updateLoginDate(){
+        if($this->authenticated){
+            $sql = "UPDATE users SET lastLogin='".date('Y/m/d', time())."' WHERE email='".$this->email."'";
+            $this->DB->query($sql);
         }
     }
     
@@ -57,8 +71,8 @@ class Auth{
     
     // Compares the two hashes
     // return true or false
-    public function compareHash($row){
-        if($this->password == $row['password']){
+    public function compareHash($password){
+        if($this->password == $password){
             return true;
         }
         
@@ -77,6 +91,8 @@ class Auth{
     
     // Revoke authorization from the user's sesion
     public function deAuth(){
+        $this->updateIP();
+        $this->updateLoginDate();
         $this->authenticated = false;
         session_destroy();
     }

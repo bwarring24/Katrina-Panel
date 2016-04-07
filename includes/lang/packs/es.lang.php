@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 ///////////////////////////////////
 // en.lang.php v1                //
 //                               //
@@ -20,15 +20,14 @@ $langPack['coreError'][102] = "Password must be minimum 5 characters long with a
 
 
 // Login Pack
-$langPack['login']['pageTitle'] = "Login - Katrina Panel";
-$langPack['login']['title'] = "Login";
-$langPack['login']['email'] = "Email";
-$langPack['login']['password'] = "Password";
-$langPack['login']['submit'] = "Login";
-$langPack['login']['logoutMsg'] = "You have been logged out.";
-$langPack['login']['errorUserPass'] = "The username or password provided is incorrect";
-$langPack['login']['errorMaxAttemps'] = "You have reached the maximum number of attempts to login";
-$langPack['login']['createAccount'] = "Create an Account";
+$langPack['login']['pageTitle'] = "Inicio de sesión - Panel de Katrina";
+$langPack['login']['title'] = "Inicio de sesión";
+$langPack['login']['email'] = "Correo electrónico";
+$langPack['login']['password'] = "contraseña";
+$langPack['login']['submit'] = "Inicio de sesión";
+$langPack['login']['errorUserPass'] = "El nombre de usuario o contraseña es incorrecta";
+$langPack['login']['errorMaxAttemps'] = "Han alcanzado el número máximo de intentos de login";
+$langPack['login']['createAccount'] = "Crear una cuenta";
 
 
 // Reigster Pack
