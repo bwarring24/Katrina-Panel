@@ -5,51 +5,51 @@
         $error = null;
 
         if (empty($_POST["firstName"])) {
-            $error .= "Name is required\n";
+            $error .= "{lang:register-firstNameRequired}\n";
         } else {
             $name = $_POST["firstName"];
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-                $error .= "Only letters and white space allowed\n";
+                $error .= "{lang:coreError-100}\n";
             }
         }
 
         if (empty($_POST["lastName"])) {
-            $error .= "Name is required\n";
+            $error .= "{lang:register-lastNameRequired}\n";
         } else {
             $name = $_POST["lastName"];
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-                $error .= "Only letters and white space allowed\n";
+                $error .= "{lang:coreError-100}\n";
             }
         }
 
         if (empty($_POST["email"])) {
-            $error .= "Email is required\n";
+            $error .= "{lang:register-emailRequired}\n";
         } else {
             $email = $_POST["email"];
             // check if e-mail address is well-formed
             if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                $error .= "Invalid email format\n";
+                $error .= "{lang:coreError-101}\n";
             }
         }
 
         if (empty($_POST["password"])) {
-            $error .= "Password is required\n";
+            $error .= "{lang:register-passRequired}\n";
         } else {
             $pass = $_POST["password"];
             if (!preg_match("/^([a-zA-Z0-9_+-,.:\/!@&#$%\^*();\\|<>'?=-])+$/", $pass)) {
-                $error .= "Password must be minimum 5 characters long with at least 1 alphabet and 1 number\n";
+                $error .= "{lang:coreError-102}\n";
             }
         }
 
         if (empty($_POST["password2"])) {
-            $error .= "Must retype password\n";
+            $error .= "{lang:register-passRetype}\n";
         } else {
             $pass = $_POST["password"];
             $pass2 = $_POST["password2"];
             if($pass != $pass2){
-                $error .= "Passwords don't match!";
+                $error .= "{lang:register-passDoesNotMatch}\n";
             }
         }
 

@@ -1,22 +1,22 @@
 <form name="login" method="POST">
-    <div id="login">
+    <div class="login">
         <h1>{lang:login-title}</h1>
     </div>
         
-    <div id="line">
+    <div class="line">
     </div>
      
-    <div id="login">
+    <div class="login">
         <div class="frmLabel"><h2>{lang:login-email}</h2></div>
         <div class="frmInput"><h2><input id="txtEmail" type="text" name="email" size="20" /></h2></div>
     </div>
         
-    <div id="login">
+    <div class="login">
         <div class="frmLabel"><h2>{lang:login-password}</h2></div>
         <dic class="frmInput"><h2><input id="txtPass" type="password" name="password" size="20" /></h2></div>
     </div>
         
-    <div id="line">
+    <div class="line">
     </div>
     
     <br />

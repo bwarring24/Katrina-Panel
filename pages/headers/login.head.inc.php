@@ -1,4 +1,6 @@
 <?php
+    $error = null;
+
     // Get our instances
     $Auth = Auth::getInstance();
     $DB = DB::getInstance();
@@ -11,10 +13,11 @@
         
         if(!$Auth->isAuthenticated()){
             $error .= "{lang:coreError-401}";
+            echo "<div class='error'>".$error."</div>";
         }else{
             header('Location:' . $_SERVER['HTTP_REFERER']);
         }
     }
     
-    echo "<div class='error'>".$error."</div>";
+    
 ?>

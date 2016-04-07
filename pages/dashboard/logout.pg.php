@@ -1,5 +1,9 @@
 <?php
-    session_destroy();
+    $Auth = Auth::getInstance();
+    
+    $Auth->deAuth();
+    
+    header('Location:' . $_SERVER['HTTP_REFERER']);
 ?>
 
 

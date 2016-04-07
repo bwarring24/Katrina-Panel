@@ -12,8 +12,18 @@ class DB{
     private $record = null;
     private $CoreError;
 
+<<<<<<< HEAD
 
     function __construct(){
+=======
+    
+    function __construct(){ 
+        $this->setCredentials();
+        $this->connect();
+    }
+    
+    public function setCredentials(){
+>>>>>>> origin/master
         // Lets require our config file again because that is just life...
         require("includes/config.inc.php");
 
@@ -21,8 +31,11 @@ class DB{
         $this->user = $db['user'];
         $this->pass = $db['pass'];
         $this->name = $db['name'];
+<<<<<<< HEAD
 
         $this->connect();
+=======
+>>>>>>> origin/master
     }
 
     // Create teh MySQLi connection
@@ -38,10 +51,21 @@ class DB{
 
     // Execute query
     public function query($sql){
+<<<<<<< HEAD
         if($this->result = mysqli_query($this->conn, $sql)){
             return true;
         }
 
+=======
+        if($this->conn == null){
+            $this->setCredentials();
+            $this->connect();   
+        }
+        
+        if($this->result = mysqli_query($this->conn, $sql)){
+            return true; 
+        }
+>>>>>>> origin/master
         return false;
     }
 
