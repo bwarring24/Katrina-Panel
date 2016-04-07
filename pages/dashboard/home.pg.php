@@ -12,60 +12,62 @@
     </div>
 </div>
 
-<div class="module"> 
-    <div id="leftRivet">
-        <img src="theme/default/main/images/rivets.png" alt="" />
+<div id="modules">
+    <div class="module"> 
+        <div id="leftRivet">
+            <img src="theme/default/main/images/rivets.png" alt="" />
+        </div>
+                        
+        <div id="rightRivet">
+            <img src="theme/default/main/images/rivets.png" alt="" />
+        </div>
+                        
+        <div id="headerTitle">
+            {lang:home-userModules}
+        </div>
     </div>
-                    
-    <div id="rightRivet">
-        <img src="theme/default/main/images/rivets.png" alt="" />
-    </div>
-                    
-    <div id="headerTitle">
-        {lang:home-userModules}
-    </div>
-</div>
 
-<br />
+    <br />
 
-<div class="module">
-    <div id="leftRivet">
-        <img src="theme/default/main/images/rivets.png" alt="" />
+    <div class="module">
+        <div id="leftRivet">
+            <img src="theme/default/main/images/rivets.png" alt="" />
+        </div>
+                        
+        <div id="rightRivet">
+            <img src="theme/default/main/images/rivets.png" alt="" />
+        </div>
+                        
+        <div id="headerTitle">
+            {lang:home-fileModules}
+        </div>
     </div>
-                    
-    <div id="rightRivet">
-        <img src="theme/default/main/images/rivets.png" alt="" />
+    <br />
+    <div class="module">
+        <div id="leftRivet">
+            <img src="theme/default/main/images/rivets.png" alt="" />
+        </div>
+                        
+        <div id="rightRivet">
+            <img src="theme/default/main/images/rivets.png" alt="" />
+        </div>
+                        
+        <div id="headerTitle">
+            {lang:home-packages}
+        </div>
     </div>
-                    
-    <div id="headerTitle">
-        {lang:home-fileModules}
-    </div>
-</div>
-<br />
-<div class="module">
-    <div id="leftRivet">
-        <img src="theme/default/main/images/rivets.png" alt="" />
-    </div>
-                    
-    <div id="rightRivet">
-        <img src="theme/default/main/images/rivets.png" alt="" />
-    </div>
-                    
-    <div id="headerTitle">
-        {lang:home-packages}
-    </div>
-</div>
-<br />
-<div class="module">
-    <div id="leftRivet">
-        <img src="theme/default/main/images/rivets.png" alt="" />
-    </div>
-                    
-    <div id="rightRivet">
-        <img src="theme/default/main/images/rivets.png" alt="" />
-    </div>
-                    
-    <div id="headerTitle">
-        {lang:home-thirdPartyPackages}
+    <br />
+    <div class="module">
+        <div id="leftRivet">
+            <img src="theme/default/main/images/rivets.png" alt="" />
+        </div>
+                        
+        <div id="rightRivet">
+            <img src="theme/default/main/images/rivets.png" alt="" />
+        </div>
+                        
+        <div id="headerTitle">
+            {lang:home-thirdPartyPackages}
+        </div>
     </div>
 </div>

@@ -62,7 +62,7 @@ $langPack['home']['statistics'] = "Statistics";
 $langPack['home']['userModules'] = "User Modules";
 $langPack['home']['fileModules'] = "File Modules";
 $langPack['home']['packages'] = "Packages";
-$langPack['home']['thridPartyPackages'] = "Third Party Packages";
+$langPack['home']['thirdPartyPackages'] = "Third Party Packages";
 
 
 // Profile Pack 

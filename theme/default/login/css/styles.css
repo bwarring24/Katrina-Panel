@@ -71,7 +71,7 @@ h2 {
     border-style: solid;
 }
 
-#line{
+.line{
     margin-left: 50px;
 	margin-right: 50px;
 	border-top-width: 1px;
