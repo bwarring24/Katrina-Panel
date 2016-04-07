@@ -10,31 +10,25 @@ $lname=$row['lastName'];
 $date=$row['creationDate'];
 
 ?>
-<table width="398" border="0" align="center" cellpadding="0">
-  <tr>
-    <td height="26" colspan="2">Your Profile Information </td>
-  </tr>
-  <tr>
-    <td width="82" valign="top"><div align="left">FirstName:</div></td>
-    <td width="165" valign="top"><?php echo $fname ?></td>
-  </tr>
-  <tr>
-    <td valign="top"><div align="left">LastName:</div></td>
-    <td valign="top"><?php echo $lname ?></td>
-  </tr>
 
-  <tr>
-    <td valign="top"><div align="left">Address:</div></td>
-    <td valign="top"><?php echo $email ?></td>
-  </tr>
-  <tr>
-    <td valign="top"><div align="left">Account Created: </div></td>
-    <td valign="top"><?php echo $date ?></td>
-  </tr>
-  <tr>
-    <td valign="top"><div align="left"><a href="index.php?p=change_pas"> Change Password </a></div></td>
-  </tr>
-  <tr>
-    <td valign="top"><div align="left"><a  href="index.php?p=delete_ac">Delete Account</a></div></td>
-  </tr>
-</table>
+<div class="frmLabel"><h1>{lang:profile-title}</h1></div>
+
+<div class="line">
+</div>
+
+<div class="frmLabel" align="left"><h2>{lang:register-firstName}</h2></div>
+<div align= "center"> <?php echo $fname ?></div>
+
+<div class="frmLabel" align="left" ><h2>{lang:register-lastName}</h2></div>
+<div align= "center"><?php echo $lname ?></div>
+
+
+<div class="frmLabel" align="left"><h2>{lang:register-email}</h2></div>
+<div align= "center"><?php echo $email ?></div>
+
+<div class="frmLabel" align="left"><h2>{lang:profile-date}</h2></div>
+<div align= "center"><?php echo $date ?></div>
+
+<div align="center"><a href="index.php?p=change_pas"> {lang:profile-change}</a></div>
+
+<div align="center"><a  href="index.php?p=delete_ac">{lang:profile-delete}</a></div>

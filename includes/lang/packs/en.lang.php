@@ -58,12 +58,10 @@ $langPack['register']['passDoesNotMatch'] = "Passwords do not match";
 // Home Pack
 $langPack['home']['pageTitle'] = "Dashboard - Katrina Panel";
 $langPack['home']['title'] = "Dashboard";
-$langPack['home']['statistics'] = "Statistics";
 $langPack['home']['userModules'] = "User Modules";
 $langPack['home']['fileModules'] = "File Modules";
 $langPack['home']['packages'] = "Packages";
 $langPack['home']['thirdPartyPackages'] = "Third Party Packages";
-$langPack['home']['account'] = "Account";
 
 
 // Profile Pack
@@ -82,4 +80,6 @@ $langPack['mod']['userDelete'] = "Delete User";
 $langPack['mod']['passwordProtect'] = "Password Protect";
 $langPack['mod']['errorPages'] = "Error Pages";
 $langPack['mod']['fileManager'] = "File Manager";
+$langPack['mod']['statistics'] = "Statistics";
+$langPack['mod']['account'] = "Account";
 ?>

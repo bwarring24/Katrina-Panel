@@ -28,27 +28,36 @@ if(count($_POST)>0) {
 </head>
 <body>
   <form name="frmChange" method="post" action="" onSubmit="return validatePassword()">
-    <div style="width:500px;">
-      <div class="message"><?php if(isset($message)) { echo $message; } ?></div>
-      <table border="0" cellpadding="10" cellspacing="0" width="500" align="center" class="tblSaveForm">
-        <tr class="tableheader">
-          <td colspan="2">Change Password</td>
-        </tr>
-        <tr>
-          <td width="40%"><label>Current Password</label></td>
-          <td width="60%"><input type="password" name="currentPassword" class="txtField"/><span id="currentPassword"  class="required"></span></td>
-        </tr>
-        <tr>
-          <td><label>New Password</label></td>
-          <td><input type="password" name="newPassword" class="txtField"/><span id="newPassword" class="required"></span></td>
-        </tr>
-        <td><label>Confirm Password</label></td>
-        <td><input type="password" name="confirmPassword" class="txtField"/><span id="confirmPassword" class="required"></span></td>
-      </tr>
-      <tr>
-        <td colspan="2"><input type="submit" name="submit" value="Submit" class="btnSubmit"></td>
-      </tr>
-    </table>
-  </div>
+    <div class="message"><?php if(isset($message)) { echo $message; } ?></div>
+
+    <div id="line">
+    </div>
+
+    <div><h2>Change Password</h2></div>
+
+    <div id="login">
+      <div class="frmLabel"><h2>Current Password</h2></div>
+      <div class="frmInput"><h2><input type="password" name="currentPassword" class="txtField"/><span id="currentPassword"  class="required"></span></h2></div>
+    </div>
+
+    <div id="login">
+      <div class="frmLabel"><h2>New Password</h2></div>
+      <div class="frmInput"><h2><input type="password" name="newPassword" class="txtField"/><span id="newPassword" class="required"></span></h2></div>
+    </div>
+
+    <div id="login">
+      <div class="frmLabel"><h2>Confirm Password</h2></div>
+      <div class="frmInput"><h2><input type="password" name="confirmPassword" class="txtField"/><span id="confirmPassword" class="required"></h2></div>
+    </div>
+
+
+    <div id="line">
+    </div>
+
+    <br />
+
+    <div align="center">
+      <input id="btn" type="submit" name="btnSubmit" value="Submit" />
+    </div>
 </form>
 </body></html>

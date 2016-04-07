@@ -47,44 +47,30 @@ class Lang{
     
     // Parses through the document and replaces all occurences of {lang:pageName-blockDesc}
     public function replaceBlock($string){
-        if(preg_match_all("/{(lang:pageName[^{]*)}/i", $string, $array)){
-            $page = null;
-            
-            if(isset($_GET['p'])){
-                $page = $_GET['p'];
-            }else{
-                if($this->Auth->isAuthenticated()){
-                    $page = "home";
-                }else{
-                    $page = "login";    
-                }
-            }
-            
-            $array = $array[0];
-			$newString = $string;
-			foreach($array as $key => $value)
-			{
-				$newValue = str_replace('{', '', str_replace('}', '', str_replace('lang:', '', $value)));
-				$explosion = explode('-', $newValue);
-				$subject = $page;
-				$option = $explosion[1];
-				$newString = str_replace($value, $this->langPack[$subject][$option], $newString);	
-			}
-			
-			$newString = str_replace('{lang}', $this->lang, $newString);
-			
-			return $newString;
-        }
-        elseif (preg_match_all("/{(lang:[^{]*)}/i", $string, $array))
+        if (preg_match_all("/{(lang:[^{]*)}/i", $string, $array))
 		{
+           
 			$array = $array[0];
 			$newString = $string;
+            
 			foreach($array as $key => $value)
 			{
 				$newValue = str_replace('{', '', str_replace('}', '', str_replace('lang:', '', $value)));
 				$explosion = explode('-', $newValue);
 				$subject = $explosion[0];
 				$option = $explosion[1];
+                
+                if($subject == "pageName"){
+                    if(isset($_GET['p'])){
+                        $subject = $_GET['p'];
+                    }else{
+                        if($this->Auth->isAuthenticated()){
+                            $subject = "home";
+                        }else{
+                            $subject = "login";    
+                        }
+                    }
+                }
 				$newString = str_replace($value, $this->langPack[$subject][$option], $newString);	
 			}
 			

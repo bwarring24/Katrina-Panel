@@ -63,9 +63,11 @@
                 </div>
                                 
                 <div id="headerTitle">
-                    {lang:home-statistics}
+                    {lang:mod-statistics}
                 </div>
             </div>
+            
+            My future content
         </div>
 
         <div id="sidebarRight">
@@ -79,9 +81,11 @@
                 </div>
                                 
                 <div id="headerTitle">
-                    {lang:home-account}
+                    {lang:mod-account}
                 </div>
             </div>
+            
+            My future content
         </div>
         
         

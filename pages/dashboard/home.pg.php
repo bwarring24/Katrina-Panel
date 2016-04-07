@@ -15,16 +15,17 @@
     
     <div class="module">
         <img class="icon" src="theme/default/main/images/user.png" alt="{lang:mod-user}" />
-        {lang:module-user}
+        <div class="caption">{lang:mod-user}</div>
     </div>
     
     <div class="module">
         <img class="icon" src="theme/default/main/images/user_add.png" alt="{lang:mod-userAdd}" />
-        {lang:module-userAdd}
+        <div class="caption">{lang:mod-userAdd}</div>
     </div>
     
     <div class="module">       
         <img class="icon" src="theme/default/main/images/user_delete.png" alt="{lang:mod-userDelete}" />
-        {lang:module-userDelete}
+        <div class="caption">{lang:mod-userDelete}
+            </div>
     </div>
 </div>
