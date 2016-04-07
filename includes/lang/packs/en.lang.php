@@ -63,9 +63,23 @@ $langPack['home']['userModules'] = "User Modules";
 $langPack['home']['fileModules'] = "File Modules";
 $langPack['home']['packages'] = "Packages";
 $langPack['home']['thirdPartyPackages'] = "Third Party Packages";
+$langPack['home']['account'] = "Account";
 
 
-// Profile Pack 
+// Profile Pack
 $langPack['profile']['pageTitle'] = "Profile";
 $langPack['profile']['title'] = "Profile";
+
+
+// Delete Pack
+$langPack['delete']['success'] = "Account successfully deleted!";
+
+
+// Modules Pack
+$langPack['mod']['user'] = "User";
+$langPack['mod']['userAdd'] = "Add User";
+$langPack['mod']['userDelete'] = "Delete User";
+$langPack['mod']['passwordProtect'] = "Password Protect";
+$langPack['mod']['errorPages'] = "Error Pages";
+$langPack['mod']['fileManager'] = "File Manager";
 ?>

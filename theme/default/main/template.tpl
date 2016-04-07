@@ -36,7 +36,7 @@
                 
                 <div id="searchCenter">
                     <form name="frmSearch" method="GET">
-                        <input id="txtQuery type="text" name="query" style="background-color: #7C7B7B; height: 20px; color: #FFFFFF; border: 0px;" />
+                        <input id="txtQuery type="text" name="query" style="background-color: #7C7B7B; height: 20px; width: 100%; color: #FFFFFF; border: 0px;" />
                     </form>
                 </div>
             </div>
@@ -49,6 +49,39 @@
         <div id="headerBanner">
             <img id="bannerLeft" src="theme/default/main/images/bannerLeft.png" alt="Katrina Panel" />
             <img id="bannerRight" src="theme/default/main/images/bannerRight.png" alt="Katrina Panel" />
+        </div>
+        
+        
+        <div id="sidebarLeft">
+            <div class="header">
+                <div id="leftRivet">
+                    <img src="theme/default/main/images/rivets.png" alt="" />
+                </div>
+                                
+                <div id="rightRivet">
+                    <img src="theme/default/main/images/rivets.png" alt="" />
+                </div>
+                                
+                <div id="headerTitle">
+                    {lang:home-statistics}
+                </div>
+            </div>
+        </div>
+
+        <div id="sidebarRight">
+            <div class="header">
+                <div id="leftRivet">
+                    <img src="theme/default/main/images/rivets.png" alt="" />
+                </div>
+                                
+                <div id="rightRivet">
+                    <img src="theme/default/main/images/rivets.png" alt="" />
+                </div>
+                                
+                <div id="headerTitle">
+                    {lang:home-account}
+                </div>
+            </div>
         </div>
         
         

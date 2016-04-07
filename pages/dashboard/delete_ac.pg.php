@@ -4,7 +4,7 @@ if (!isset($_SESSION['email'])){
   }
 
 $email = $_SESSION['email'];
-$DB = DB::getInstance();
+$DB = new DB();
 $action = isset($_GET['action']) ? $_GET['action'] : "";
 
 if($action=='yes'){

@@ -10,7 +10,7 @@ class Auth{
 	private $DB = NULL;
     
     public function __construct(){
-        $this->DB = DB::getInstance();
+        $this->DB = new DB();
         
         $this->authenticate();
     }
@@ -70,11 +70,12 @@ class Auth{
         return mcrypt_create_iv(16, MCRYPT_DEV_URANDOM);
     }
     
-    
+    // Returns true if authenticated or false if not authenticated
     public function isAuthenticated(){
         return $this->authenticated;
     }
     
+    // Revoke authorization from the user's sesion
     public function deAuth(){
         $this->authenticated = false;
         session_destroy();

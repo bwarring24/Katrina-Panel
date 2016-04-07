@@ -1,6 +1,6 @@
 <?php
 $email=$_SESSION['email'];
-$DB = DB::getInstance();
+$DB = new DB();
 $sql = "SELECT * FROM users WHERE email='".$email."'";
 $DB->query($sql);
 $row = $DB->singleRecord();
@@ -30,5 +30,11 @@ $date=$row['creationDate'];
   <tr>
     <td valign="top"><div align="left">Account Created: </div></td>
     <td valign="top"><?php echo $date ?></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="left"><a href="index.php?p=change_pas"> Change Password </a></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="left"><a  href="index.php?p=delete_ac">Delete Account</a></div></td>
   </tr>
 </table>
