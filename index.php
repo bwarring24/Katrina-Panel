@@ -23,10 +23,10 @@ if($setting['maintenance']){
 }
 
 // Check to see if debug mode should be enalbed
-if($setting['debug']){
-    ini_set('display_errors',1);
-    error_reporting(E_ALL);
-}
+//if($setting['debug']){
+    ini_set('display_errors',0);
+    error_reporting(0);
+//}
 
 // Check to see if there is a specified language requested
 if($setting['language'] != null){

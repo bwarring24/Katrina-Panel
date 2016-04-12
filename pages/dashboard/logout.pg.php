@@ -2,7 +2,9 @@
     $Auth = Auth::getInstance();
     
     $Auth->deAuth();
-    
+    //unset($_COOKIE['authenticated']);
+        setcookie("authenticated", "", time()-3600, "/Katrina-Panel/");
+
     header('Location:/Katrina-Panel/');
 ?>
 

@@ -8,117 +8,117 @@
 // Email: bwarring24@gmail.com   //
 ///////////////////////////////////
 
-
 // Core Errors
-$langPack['coreError'][400] = "The request cannot be completed; malformed request syntax.";
-$langPack['coreError'][401] = "The username/password that was entered is incorrect";
-$langPack['coreError'][403] = "You do not have the permission to view this page.";
-$langPack['coreError'][404] = "The resource requested could not be found.";
-$langPack['coreError'][100] = "Only letters and white space allowed";
-$langPack['coreError'][101] = "Invalid email format";
-$langPack['coreError'][102] = "Password must be minimum 5 characters long with at least 1 alphabet and 1 number\n";
+$langPack['coreError'][400] = "No se puede completar la orden; sintaxis defectuosa de la orden";
+$langPack['coreError'][401] = "El nombre del usuario/la contraseña usada está incorrecto/a";
+$langPack['coreError'][403] = "No tiene autorización para ver esta página";
+$langPack['coreError'][404] = "No se puede encontrar el recurso solicitado";
+$langPack['coreError'][100] = "Sólo se permiten letras y espacios en blanco";
+$langPack['coreError'][101] = "Formato de correo electrónico inválido";
+$langPack['coreError'][102] = "La contraseña debe tener una extensión mínima de 5 caracteres con al menos uno alfabético y un numeral\n";
 
 
 // Login Pack
-$langPack['login']['pageTitle'] = "Inicio de sesión - Panel de Katrina";
-$langPack['login']['title'] = "Inicio de sesión";
+$langPack['login']['pageTitle'] = "Acceso - Panel Katrina";
+$langPack['login']['title'] = "Ingreso";
 $langPack['login']['email'] = "Correo electrónico";
-$langPack['login']['password'] = "contraseña";
-$langPack['login']['submit'] = "Inicio de sesión";
-$langPack['login']['errorUserPass'] = "El nombre de usuario o contraseña es incorrecta";
-$langPack['login']['errorMaxAttemps'] = "Han alcanzado el número máximo de intentos de login";
-$langPack['login']['createAccount'] = "Crear una cuenta";
+$langPack['login']['password'] = "Contraseña";
+$langPack['login']['submit'] = "Ingreso";
+$langPack['login']['logoutMsg'] = "Su ingreso ha sido anulado";
+$langPack['login']['errorUserPass'] = "El nombre de usuario o contraseña usado/a está incorrecto/a";
+$langPack['login']['errorMaxAttemps'] = "Ha sobrepasado el máximo número de intentos para ingresar";
+$langPack['login']['createAccount'] = "Cree una Cuenta";
 
 
 // Reigster Pack
-$langPack['register']['pageTitle'] = "Register - Katrina Panel";
-$langPack['register']['title'] = "Register";
-$langPack['register']['firstName'] = "First Name";
-$langPack['register']['lastName'] = "Last Name";
-$langPack['register']['email'] = "Email";
-$langPack['register']['password'] = "Password";
-$langPack['register']['retypePassword'] = "Retype Password";
-$langPack['register']['submit'] = "Create Account";
-$langPack['register']['success'] = "Successful Registration!";
-$langPack['register']['userExists'] = "Email is already registered";
-$langPack['register']['firstNamePlaceholder'] = "i.e. Bill";
-$langPack['register']['lastNamePlaceholder'] = "i.e. Gates";
+$langPack['register']['pageTitle'] = "Regístrese - Panel Katrina";
+$langPack['register']['title'] = "Regístrese";
+$langPack['register']['firstName'] = "Nombre";
+$langPack['register']['lastName'] = "Apellido";
+$langPack['register']['email'] = "Correo electrónico";
+$langPack['register']['password'] = "Contraseña";
+$langPack['register']['retypePassword'] = "Reescriba su contraseña";
+$langPack['register']['submit'] = "Cree una Cuenta";
+$langPack['register']['success'] = "Inscripción realizada";
+$langPack['register']['userExists'] = "El correo electrónico ya aparece registrado";
+$langPack['register']['firstNamePlaceholder'] = "ës decir, Factura";
+$langPack['register']['lastNamePlaceholder'] =  "ës decir, Gates";
 $langPack['register']['emailPlaceholder'] = "bgates@microsoft.com";
 $langPack['register']['pass1Placeholder'] = "i.e. I<3Microsoft";
 $langPack['register']['pass2Placeholder'] = "i.e. I<3Microsoft";
-$langPack['register']['firstNameRequired'] = "First name is required";
-$langPack['register']['lastNameRequired'] = "Last name is required";
-$langPack['register']['emailRequired'] = "Email is required";
-$langPack['register']['passRequired'] = "Password is required";
-$langPack['register']['passRetype'] = "Must retype password";
-$langPack['register']['passDoesNotMatch'] = "Passwords do not match";
+$langPack['register']['firstNameRequired'] = "Se requiere el nombre";
+$langPack['register']['lastNameRequired'] = "Se requiere el apellido";
+$langPack['register']['emailRequired'] = "Se requiere el correo electrónico";
+$langPack['register']['passRequired'] = "Se requiere la contraseña";
+$langPack['register']['passRetype'] = "Se requiere que escriba nuevamente la contraseña";
+$langPack['register']['passDoesNotMatch'] = "Las contraseñas no coincidedn";
 
 
 // Home Pack
-$langPack['home']['pageTitle'] = "Dashboard - Katrina Panel";
-$langPack['home']['title'] = "Dashboard";
-$langPack['home']['userModules'] = "User Modules";
-$langPack['home']['fileModules'] = "File Modules";
-$langPack['home']['packages'] = "Packages";
-$langPack['home']['thirdPartyPackages'] = "Third Party Packages";
+$langPack['home']['pageTitle'] = "Tablero de mandos - Panel Katrina";
+$langPack['home']['title'] = "Tablero de mandos";
+$langPack['home']['userModules'] = "Módulos del usuario";
+$langPack['home']['fileModules'] = "Módules del documento";
+$langPack['home']['packages'] = "Paquetes";
+$langPack['home']['thirdPartyPackages'] = "Paquetes de otra persona";
 
 
 //Profile
-$langPack['profile']['pageTitle'] = "Profile - Katrina Panel";
-$langPack['profile']['title'] = "Profile Information";
-$langPack['profile']['firstName'] = "First Name";
-$langPack['profile']['lastName'] = "Last Name";
-$langPack['profile']['email'] = "Email";
-$langPack['profile']['creationDate'] = "Account Created";
-$langPack['profile']['lastIP'] = "Last IP";
-$langPack['profile']['lastLogin'] = "Last Login";
-$langPack['profile']['delete'] = "Delete Account";
-$langPack['profile']['change'] = "Change Password";
+$langPack['profile']['pageTitle'] = "Perfil -  Panel Katrina";
+$langPack['profile']['title'] = "Información del perfil";
+$langPack['profile']['firstName'] = "Nimbre";
+$langPack['profile']['lastName'] = "Apellido";
+$langPack['profile']['email'] = "Correo electrónico";
+$langPack['profile']['creationDate'] = "Cuenta creada";
+$langPack['profile']['lastIP'] = "Ültima IP";
+$langPack['profile']['lastLogin'] = "Último ingreso";
+$langPack['profile']['delete'] = "Borrar la cuenta";
+$langPack['profile']['change'] = "Cambiar la contraseña";
 
 
 // Delete Pack
-$langPack['deleteAccount']['pageTitle'] = "Delete Account - Katrina Panel";
-$langPack['deleteAccount']['title'] = "Delete Account";
-$langPack['deleteAccount']['question'] = "Are you sure you want to delete your account?";
-$langPack['deleteAccount']['yes'] = "Yes, delete it.";
-$langPack['deleteAccount']['no'] = "No, take me back!";
-$langPack['deleteAccount']['success'] = "Account successfully deleted!";
+$langPack['deleteAccount']['pageTitle'] = "Borrar la cuenta - Panel Katrina";
+$langPack['deleteAccount']['title'] = "Borrar la cuenta";
+$langPack['deleteAccount']['question'] = "¿Está seguro/a que quiere borrar su cuenta?";
+$langPack['deleteAccount']['yes'] = "Sí, borrarla";
+$langPack['deleteAccount']['no'] = "No llevarme a lo anterior";
+$langPack['deleteAccount']['success'] = "La cuenta ha sido borrada sin problemas";
 
 
 // Change Password Pack
-$langPack['changePassword']['pageTitle'] = "Change Password - Katrina Panel";
-$langPack['changePassword']['title'] = "Change Password";
-$langPack['changePassword']['incorrectPassword'] = "Current password is incorrect.";
-$langPack['changePassword']['success'] = "Password successfully changed!";
+$langPack['changePassword']['pageTitle'] = "Cambair la contraseña - Pamel Katrina";
+$langPack['changePassword']['title'] = "Cambiar contraseña";
+$langPack['changePassword']['incorrectPassword'] = "La contraseña actual está incorrecta";
+$langPack['changePassword']['success'] = "La contraseña ha sido cambiada sin problemas";
 
 
 //Logout Pack
-$langPack['logout']['pageTitle'] = "Logout - Katrina Panel";
-$langPack['logout']['title'] = "Logout";
-$langPack['logout']['description'] = "You are being logged out of the system.";
-$langPack['logout']['manual'] = "Click here if you are not re-directed automatically";
+$langPack['logout']['pageTitle'] = "Cerrar sesión - Panel Katrina";
+$langPack['logout']['title'] = "Cerrar sesión";
+$langPack['logout']['description'] = "Se está cerrando la sesión en el sistema";
+$langPack['logout']['manual'] = "Haga clic aquí si no es re-dirigido.a automáticamente";
 
 
 // Modules Pack
-$langPack['mod']['user'] = "User";
-$langPack['mod']['userAdd'] = "Add User";
-$langPack['mod']['userDelete'] = "Delete User";
-$langPack['mod']['passwordProtect'] = "Password Protect";
-$langPack['mod']['errorPages'] = "Error Pages";
-$langPack['mod']['fileManager'] = "File Manager";
-$langPack['mod']['statistics'] = "Statistics";
-$langPack['mod']['account'] = "Account";
-$langPack['mod']['serverNameTitle'] = "Server Name";
+$langPack['mod']['user'] = "Usuario";
+$langPack['mod']['userAdd'] = "Agregar usuario";
+$langPack['mod']['userDelete'] = "Borrar a usuario";
+$langPack['mod']['passwordProtect'] = "Con protección de contraseña";
+$langPack['mod']['errorPages'] = "Página con error";
+$langPack['mod']['fileManager'] = "Mánager de documentos";
+$langPack['mod']['statistics'] = "Estadísticas";
+$langPack['mod']['account'] = "Cuenta";
+$langPack['mod']['serverNameTitle'] = "Nombre del servidor del sistema";
 $langPack['mod']['serverName'] = "ARPAnet";
-$langPack['mod']['panelVersionTitle'] = "Panel Version";
-$langPack['mod']['panelVersion'] = "0.1 (Alpha)";
-$langPack['mod']['apacheVersionTitle'] = "Apache Version";
+$langPack['mod']['panelVersionTitle'] = "Versión del panel";
+$langPack['mod']['panelVersion'] = ";ö.1 (Alfa)";
+$langPack['mod']['apacheVersionTitle'] = "versión apache";
 $langPack['mod']['apacheVersion'] = "5.5";
-$langPack['mod']['phpVersionTitle'] = "PHP Version";
+$langPack['mod']['phpVersionTitle'] = "Versión PHP";
 $langPack['mod']['phpVersion'] = "5.3";
-$langPack['mod']['nameTitle'] = "Name";
-$langPack['mod']['viewProfile'] = "View Profile";
-$langPack['mod']['emailTitle'] = "Email";
-$langPack['mod']['logout'] = "Logout!";
+$langPack['mod']['nameTitle'] = "Nombre";
+$langPack['mod']['viewProfile'] = "Ver perfil";
+$langPack['mod']['emailTitle'] = "Correo electrónico";
+$langPack['mod']['logout'] = "Cierre de sesión";
 
 ?>

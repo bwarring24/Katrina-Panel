@@ -22,8 +22,15 @@ class Page{
     function __construct(){
         $this->Lang = Lang::getInstance();
         $this->Auth = Auth::getInstance();
+        $authenticated = null;
         
-        if($this->Auth->isAuthenticated()){
+        if($_COOKIE['authenticated'] == true){
+            $authenticated = true;
+        }else{
+            $authenticated = false;
+        }
+
+        if($authenticated){
             // User is logged in
             if(isset($_GET['p'])){
                 $page = $_GET['p'];

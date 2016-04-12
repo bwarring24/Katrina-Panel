@@ -20,7 +20,15 @@ class Tpl{
         $this->Page = Page::getInstance();
         $this->Auth = Auth::getInstance();
         
-        if($this->Auth->isAuthenticated()){
+         $authenticated = null;
+
+        if($_COOKIE['authenticated'] == true){
+            $authenticated = true;
+        }else{
+            $authenticated = false;
+        }
+
+        if($authenticated){
             // User is logged in so we can load the template for the logged in pages
             if(file_exists("theme/default/main/template.tpl")){
                 $fp = fopen("theme/default/main/template.tpl", "r");

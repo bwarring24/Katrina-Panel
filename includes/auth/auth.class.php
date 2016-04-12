@@ -27,7 +27,8 @@ class Auth{
             $this->DB->query($sql);
             $row = $this->DB->singleRecord();
             $this->authenticated = $this->compareHash($row['password']);
-            
+            setcookie("authenticated", "1", (time() + 3600), "/Katrina-Panel/");
+            $_SESSION['authenticated'] = $this->authenticated;
             $this->DB->close();
         }
     }
@@ -94,6 +95,8 @@ class Auth{
         $this->updateIP();
         $this->updateLoginDate();
         $this->authenticated = false;
+        unset($_COOKIE['authenticated']);
+        setcookie("authenticated", "", time()-3600, "/");
         session_destroy();
     }
     

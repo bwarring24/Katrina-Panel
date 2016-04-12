@@ -1,4 +1,4 @@
-<!DOCTYPE >
+﻿<!DOCTYPE >
 <html>
 <head>
     <meta http-equiv="ContetType" content="text/html; charset=utf-8" />
@@ -93,18 +93,36 @@
                     <div class="description">{lang:mod-phpVersion}</div>
                 </div>
             </div>
+        </div>
+
+        <div id="sidebarRight">
+            <div class="header">
+                <div id="leftRivet">
+                    <img src="theme/default/main/images/rivets.png" alt="" />
+                </div>
+                                
+                <div id="rightRivet">
+                    <img src="theme/default/main/images/rivets.png" alt="" />
+                </div>
+                                
+                <div id="headerTitle">
+                    {lang:mod-account}
+                </div>
+            </div>
             
             <div class="c1">
                 <div class="row">
                     <div class="label" align="left"><h3><a href="?p=profile">{lang:mod-viewProfile}</a></h3></div>
+                    <div class="description">{lang:mod-name}</div>
                 </div>
             </div>
             
             <div class="c2">
                 <div class="row">
-                    <div class="label" align="left"><h3><a href="?p=logout">{lang:mod-logout}</a></h3></div>
+                    <div class="label" align="left"><h3>{lang:mod-emailTitle}</h3></div>            
                 </div>
             </div>
+
         </div>
         
         <div id="content">
