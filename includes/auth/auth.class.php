@@ -8,10 +8,12 @@ class Auth{
     private $language = NULL;
 	private $authenticated = false;
 	private $DB = NULL;
+    private $User= NULL;
     
     public function __construct(){
         $this->DB = new DB();
-        
+        $this->User = User::getInstance();
+
         $this->authenticate();
     }
     
@@ -22,13 +24,18 @@ class Auth{
             $this->email = $_SESSION['email'];
             $this->password = $this->hashPass($_SESSION['password'], $this->getSalt($this->email));
             
-            $sql = "SELECT email, salt, password, language FROM users WHERE email='".$this->email."'";
+            $sql = "SELECT * FROM users WHERE email='".$this->email."'";
             
             $this->DB->query($sql);
             $row = $this->DB->singleRecord();
             $this->authenticated = $this->compareHash($row['password']);
             setcookie("authenticated", "1", (time() + 3600), "/Katrina-Panel/");
             $_SESSION['authenticated'] = $this->authenticated;
+
+            if($this->isAuthenticated()){
+                $this->User->updateInfo($row);
+            }
+
             $this->DB->close();
         }
     }
