@@ -111,7 +111,7 @@ $langPack['mod']['fileManager'] = "File Manager";
 $langPack['mod']['statistics'] = "Statistics";
 $langPack['mod']['account'] = "Account";
 $langPack['mod']['serverNameTitle'] = "Server Name";
-$langPack['mod']['serverName'] = "ARPAnet";
+$langPack['mod']['serverName'] = shell_exec("hostname");
 $langPack['mod']['panelVersionTitle'] = "Panel Version";
 $langPack['mod']['panelVersion'] = "0.1 (Alpha)";
 $langPack['mod']['apacheVersionTitle'] = "Apache Version";
@@ -123,7 +123,7 @@ $langPack['mod']['viewProfile'] = "View Profile";
 $langPack['mod']['emailTitle'] = "Email";
 $langPack['mod']['logout'] = "Logout!";
 $langPack['mod']['databases'] = "Databases";
-$langPack['mod']['groupEdit'] = "Edit Group";
+$langPack['mod']['groupDelete'] = "Delete Group";
 $langPack['mod']['groupCreate'] = "Create Group";
 $langPack['mod']['phpMyAdmin'] = "phpMyAdmin";
 $langPack['mod']['database'] = "Database";
@@ -133,5 +133,5 @@ $langPack['mod']['bandwidth'] = "Bandwidth";
 $langPack['mod']['errorLog'] = "Error Log";
 $langPack['mod']['rawLog'] = "Raw Log";
 $langPack['mod']['shortcuts'] = "Shortcuts";
-
+$langPack['mod']['group'] = "Group";
 ?>
