@@ -62,7 +62,8 @@ $langPack['home']['userModules'] = "User Modules";
 $langPack['home']['fileModules'] = "File Modules";
 $langPack['home']['packages'] = "Packages";
 $langPack['home']['thirdPartyPackages'] = "Third Party Packages";
-
+$langPack['home']['logs'] = "Logs";
+$langPack['home']['databases'] = "Databases";
 
 //Profile
 $langPack['profile']['pageTitle'] = "Profile - Katrina Panel";
@@ -121,5 +122,16 @@ $langPack['mod']['nameTitle'] = "Name";
 $langPack['mod']['viewProfile'] = "View Profile";
 $langPack['mod']['emailTitle'] = "Email";
 $langPack['mod']['logout'] = "Logout!";
+$langPack['mod']['databases'] = "Databases";
+$langPack['mod']['groupEdit'] = "Edit Group";
+$langPack['mod']['groupCreate'] = "Create Group";
+$langPack['mod']['phpMyAdmin'] = "phpMyAdmin";
+$langPack['mod']['database'] = "Database";
+$langPack['mod']['logs'] - "Logs";
+$langPack['mod']['pageHits'] = "Page Hits";
+$langPack['mod']['bandwidth'] = "Bandwidth";
+$langPack['mod']['errorLog'] = "Error Log";
+$langPack['mod']['rawLog'] = "Raw Log";
+$langPack['mod']['shortcuts'] = "Shortcuts";
 
 ?>

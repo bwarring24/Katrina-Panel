@@ -113,7 +113,7 @@
                 </div>
                                 
                 <div id="headerTitle">
-                    {lang:mod-statistics}
+                    {lang:mod-account}
                 </div>
             </div>
             
@@ -124,6 +124,12 @@
             </div>
             
             <div class="c2">
+                <div class="row">
+                    <div class="label" align="left"><h3><a href="?p=shortcuts">{lang:mod-shortcuts}</a></h3></div>
+                </div>
+            </div>
+            
+            <div class="c1">
                 <div class="row">
                     <div class="label" align="left"><h3><a href="?p=logout">{lang:mod-logout}</a></h3></div>
                 </div>
