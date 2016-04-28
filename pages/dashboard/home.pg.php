@@ -25,8 +25,7 @@
     
     <div class="module">       
         <img class="icon" src="theme/default/main/images/user_delete.png" alt="{lang:mod-userDelete}" />
-        <div class="caption">{lang:mod-userDelete}
-            </div>
+        <div class="caption">{lang:mod-userDelete}</div>
     </div>
 </div>
 
