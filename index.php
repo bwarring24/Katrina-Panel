@@ -53,6 +53,13 @@ if(file_Exists("includes/auth/auth.class.php")){
     die("Unable to locate the auth class, file does not exist");
 }
 
+// Check to see if the auth class exists
+if(file_Exists("includes/user/user.class.php")){
+    require_once("includes/user/user.class.php");
+}else{
+    die("Unable to locate the user class, file does not exist");
+}
+
 // Start the Auth Engine
 $Auth = Auth::getInstance();
 
