@@ -93,6 +93,29 @@
                     <div class="description">{lang:mod-phpVersion}</div>
                 </div>
             </div>
+        </div>
+        
+      
+        
+        <div id="content">
+            {page}
+        </div>
+        
+        
+          <div id="sidebarRight">
+            <div class="header">
+                <div id="leftRivet">
+                    <img src="theme/default/main/images/rivets.png" alt="" />
+                </div>
+                                
+                <div id="rightRivet">
+                    <img src="theme/default/main/images/rivets.png" alt="" />
+                </div>
+                                
+                <div id="headerTitle">
+                    {lang:mod-statistics}
+                </div>
+            </div>
             
             <div class="c1">
                 <div class="row">
@@ -107,9 +130,6 @@
             </div>
         </div>
         
-        <div id="content">
-            {page}
-        </div>
         
         <br />
         <br />
