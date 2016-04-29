@@ -4,11 +4,7 @@
 {mod:sidebarRight}
 
 
- <div class= "sortable">
-
-{mod:meow}
-
-
+<div class= "sortable">
 <div class="modules">
     <div class="header">
         <div id="leftRivet">
