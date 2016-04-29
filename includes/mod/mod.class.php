@@ -30,7 +30,7 @@ class Mod{
                 $newValue = str_replace('{', '', str_replace('}', '', str_replace('mod:', '', $value)));
                 $moduleName = $newValue;
                 if(file_exists("includes/mod/modules/".$moduleName.".mod.php")){
-                    ob_start();
+                    ob_start();                    
                     include "includes/mod/modules/".$moduleName.".mod.php";
                     $output = ob_get_clean();
                     

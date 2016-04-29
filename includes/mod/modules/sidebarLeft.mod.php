@@ -1,3 +1,7 @@
+<?php
+    include("includes/mod/modules/headers/sidebarLeft.head.inc.php");
+?>
+
 <div id="sidebarLeft">
     <div class="sidebarContainer">
             <div class="header">
@@ -17,28 +21,28 @@
             <div class="c1">
                 <div class="row">
                     <div class="label" align="left"><h3>{lang:mod-serverNameTitle}</h3></div>
-                    <div class="description">{lang:mod-serverName}</div>
+                    <div class="description"><?php echo $serverName; ?></div>
                 </div>
             </div>
             
             <div class="c2">
                 <div class="row">
                     <div class="label" align="left"><h3>{lang:mod-panelVersionTitle}</h3></div>
-                    <div class="description">{lang:mod-panelVersion}</div>
+                    <div class="description"><?php echo $panelVersion; ?></div>
                 </div>
             </div>
             
             <div class="c1">
                 <div class="row">
                     <div class="label" align="left"><h3>{lang:mod-apacheVersionTitle}</h3></div>
-                    <div class="description">{lang:mod-apacheVersion}</div>
+                    <div class="description"><?php echo $apacheVersion; ?></div>
                 </div>
             </div>
             
             <div class="c2">
                 <div class="row">
                     <div class="label" align="left"><h3>{lang:mod-phpVersionTitle}</h3></div>
-                    <div class="description">{lang:mod-phpVersion}</div>
+                    <div class="description"><?php echo $phpVersion; ?></div>
                 </div>
             </div>
         </div>

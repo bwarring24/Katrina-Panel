@@ -100,8 +100,7 @@ $langPack['logout']['title'] = "Logout";
 $langPack['logout']['description'] = "You are being logged out of the system.";
 $langPack['logout']['manual'] = "Click here if you are not re-directed automatically";
 
-$version = explode('~', phpversion());
-$version = explode('-', $version[0]);
+
 // Modules Pack
 $langPack['mod']['user'] = "User";
 $langPack['mod']['userAdd'] = "Add User";
@@ -112,13 +111,9 @@ $langPack['mod']['fileManager'] = "File Manager";
 $langPack['mod']['statistics'] = "Statistics";
 $langPack['mod']['account'] = "Account";
 $langPack['mod']['serverNameTitle'] = "Server Name";
-$langPack['mod']['serverName'] = shell_exec("hostname");
 $langPack['mod']['panelVersionTitle'] = "Panel Version";
-$langPack['mod']['panelVersion'] = $_SESSION['settings']['version'];
 $langPack['mod']['apacheVersionTitle'] = "Apache Version";
-$langPack['mod']['apacheVersion'] = apache_get_version();
 $langPack['mod']['phpVersionTitle'] = "PHP Version";
-$langPack['mod']['phpVersion'] = $version[0];
 $langPack['mod']['nameTitle'] = "Name";
 $langPack['mod']['viewProfile'] = "View Profile";
 $langPack['mod']['emailTitle'] = "Email";
