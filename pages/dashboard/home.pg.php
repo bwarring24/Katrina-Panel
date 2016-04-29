@@ -1,4 +1,6 @@
-{mod:meow}
+{mod:sidebarLeft}
+
+{mod:sidebarRight}
 
 <div class="modules">
     <div class="header">
@@ -185,3 +187,4 @@
         </div>
     </div>
 </div>
+

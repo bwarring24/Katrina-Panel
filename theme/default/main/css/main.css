@@ -112,17 +112,22 @@ h3 {
 
 /* Sidebar */
 
-#sidebarLeft{
-    width: 20%;
-    height: 30px;
+.sidebarContainer{
+    width: 100%;
     background-image: url('../images/headerBg.png');
     background-repeat: repeat-x;
-    height: auto;
     border-color: #B6B6B6;
     border-width: 1px;
     border-style: solid;
+    display: inline-block;
+}
+
+#sidebarLeft{
+    width: 20%;
+    min-height: 70%;
+    margin-left: 2%;
+    margin-right: 2%;
     float: left;
-    margin: 2%;
 }
 
 #sidebarLeft #leftRivet{
@@ -144,15 +149,11 @@ h3 {
 
 #sidebarRight{
     width: 20%;
-    height: 30px;
-    background-image: url('../images/headerBg.png');
-    background-repeat: repeat-x;
-    height: auto;
-    border-color: #B6B6B6;
-    border-width: 1px;
-    border-style: solid;
+    min-height: 70%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
     float: right;
-    margin: 2%;
 }
 
 #sidebarRight #leftRivet{
@@ -188,7 +189,7 @@ h3 {
 
 #content{
     display: inline-block;
-    width: 51%;
+    width: 100%;
     margin-top: 2%;
 }
 
@@ -196,7 +197,7 @@ h3 {
 /* Modules */
 
 .modules{
-    width: 100%;
+    width: 51.5%;
     height: auto;
     display: inline-block;
     border-color: #B6B6B6;
