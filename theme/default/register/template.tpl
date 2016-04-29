@@ -5,6 +5,7 @@
     <title>{lang:pageName-pageTitle}</title>
     <link href="theme/default/register/css/styles.css" rel="stylesheet" type="text/css" />
     <script src="javascript/validate.js" language="javascript" type="text/javascript"></script>
+    <script src="javascript/sortable.js" language="javascript" type="text/javascript"></script>
 </head>
 <body>
     

@@ -3,7 +3,12 @@
 <head>
     <meta http-equiv="ContetType" content="text/html; charset=utf-8" />
     <title>{lang:pageName-pageTitle}</title>
+  <!--  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">-->
     <link href="theme/default/main/css/main.css" rel="stylesheet" type="text/css" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="javascript/sortable.js" language="javascript" type="text/javascript"></script>
+
 </head>
 <body>
     
@@ -36,7 +41,7 @@
                 
                 <div id="searchCenter">
                     <form name="frmSearch" method="GET">
-                        <input id="txtQuery type="text" name="query" style="background-color: #7C7B7B; height: 20px; width: 100%; color: #FFFFFF; border: 0px;" />
+                        <input id="txtQuery" type="text" name="query" style="background-color: #7C7B7B; height: 20px; width: 100%; color: #FFFFFF; border: 0px;" />
                     </form>
                 </div>
             </div>
