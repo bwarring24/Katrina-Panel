@@ -34,7 +34,7 @@ class Auth{
 
             if($this->isAuthenticated()){
                 $this->User->updateInfo($row);
-                unset($_SESSION['password']);
+                //unset($_SESSION['password']);
             }
 
             $this->DB->close();

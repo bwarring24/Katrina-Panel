@@ -16,7 +16,7 @@ class User{
 	private $createdDate = NULL;
 	
 	function __construct(){ 
-		$this->Lang = Lang::getInstance();
+		//$this->Lang = Lang::getInstance();
 	}
 
 	public function getId(){
@@ -62,7 +62,7 @@ class User{
 		$this->fullName = $this->firstName . ' ' . $this->lastName;
 		
 		// Update the language to the page
-		$Lang->changeLanguage($this->language);
+		//$Lang->changeLanguage($this->language);
 	}
 
     // Gets the current instance of the class

@@ -131,7 +131,7 @@
     </div>
     
     <div class="module">       
-        <img class="icon" src="" alt="{lang:mod-bandwidth}" />
+        <img class="icon" src="theme/default/main/images/modules/bandwidth.png" alt="{lang:mod-bandwidth}" />
         <div class="caption">{lang:mod-bandwidth}</div>
     </div>
     

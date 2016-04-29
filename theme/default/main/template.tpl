@@ -42,15 +42,16 @@
             </div>
             
             <div id="shortcuts">
-                <img src="theme/default/main/images/home-icon.png" alt="Home" />
+                <a href="?p=home"><img src="theme/default/main/images/home-icon.png" alt="Home" /></a>
             </div> 
         </div>
         
-        <div id="headerBanner">
-            <img id="bannerLeft" src="theme/default/main/images/bannerLeft.png" alt="Katrina Panel" />
-            <img id="bannerRight" src="theme/default/main/images/bannerRight.png" alt="Katrina Panel" />
-        </div>
-        
+        <a href="?p=home">
+            <div id="headerBanner">
+                <img id="bannerLeft" src="theme/default/main/images/bannerLeft.png" alt="Katrina Panel" />
+                <img id="bannerRight" src="theme/default/main/images/bannerRight.png" alt="Katrina Panel" />
+            </div>
+        </a>
         <div id="sidebarLeft">
             <div class="header">
                 <div id="leftRivet">
