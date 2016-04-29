@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 {mod:sidebarLeft}
 
 {mod:sidebarRight}
+=======
+
+ <div class= "sortable">
+
+{mod:meow}
+>>>>>>> 419aba72e3d98d6a91520f75437b7ed270d83f1a
 
 <div class="modules">
     <div class="header">
@@ -16,7 +23,7 @@
             {lang:home-userModules}
         </div>
     </div>
-    
+    <div class= "sortable">
     <div class="module">
         <img class="icon" src="theme/default/main/images/modules/user.png" alt="{lang:mod-user}" />
         <div class="caption">{lang:mod-user}</div>
@@ -47,9 +54,9 @@
         <div class="caption">{lang:mod-groupDelete}</div>
     </div>
 </div>
+</div>
 
-<br />
-<br />
+
 
 <div class="modules">
     <div class="header">
@@ -65,7 +72,7 @@
             {lang:home-fileModules}
         </div>
     </div>
-    
+     <div class= "sortable">
     <div class="module">
         <img class="icon" src="theme/default/main/images/modules/locked.png" alt="{lang:mod-passwordProtect}" />
         <div class="caption">{lang:mod-passwordProtect}</div>
@@ -81,9 +88,9 @@
         <div class="caption">{lang:mod-fileManager}</div>
     </div>
 </div>
+</div>
 
-<br />
-<br />
+
 
 <div class="modules">
     <div class="header">
@@ -99,7 +106,7 @@
             {lang:home-databases}
         </div>
     </div>
-    
+     <div class= "sortable">
     <div class="module">       
         <img class="icon" src="theme/default/main/images/modules/phpmyadmin.png" alt="{lang:mod-phpMyAdmin}" />
         <div class="caption">{lang:mod-phpMyAdmin}</div>
@@ -110,9 +117,7 @@
         <div class="caption">{lang:mod-database}</div>
     </div>
 </div>
-
-<br />
-<br />
+</div>
 
 <div class="modules">
     <div class="header">
@@ -128,7 +133,7 @@
             {lang:home-logs}
         </div>
     </div>
-    
+     <div class= "sortable">
     <div class="module">       
         <img class="icon" src="theme/default/main/images/modules/pageHits.png" alt="{lang:mod-pageHits}" />
         <div class="caption">{lang:mod-pageHits}</div>
@@ -149,9 +154,9 @@
         <div class="caption">{lang:mod-rawLog}</div>
     </div>
 </div>
+</div>
 
-<br />
-<br />
+
 
 <div class="modules">
     <div class="header">
@@ -169,8 +174,7 @@
     </div>
 </div>
 
-<br />
-<br />
+
 
 <div class="modules">
     <div class="header">
@@ -187,4 +191,8 @@
         </div>
     </div>
 </div>
+<<<<<<< HEAD
 
+=======
+</div>
+>>>>>>> 419aba72e3d98d6a91520f75437b7ed270d83f1a
