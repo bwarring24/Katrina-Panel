@@ -1,7 +1,8 @@
 <?php
 class User{
 	private static $instance;
-
+	
+	private $Lang;
 	private $id = NULL;
 	private $email = NULL;
 	private $firstName = NULL;
@@ -13,9 +14,9 @@ class User{
 	private $lastIP = NULL;
 	private $lastLogin = NULL;
 	private $createdDate = NULL;
-
+	
 	function __construct(){ 
-
+		//$this->Lang = Lang::getInstance();
 	}
 
 	public function getId(){
@@ -59,6 +60,9 @@ class User{
 			$this->$key = $value;
 		}
 		$this->fullName = $this->firstName . ' ' . $this->lastName;
+		
+		// Update the language to the page
+		//$Lang->changeLanguage($this->language);
 	}
 
     // Gets the current instance of the class

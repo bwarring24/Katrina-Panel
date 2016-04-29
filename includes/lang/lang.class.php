@@ -19,12 +19,8 @@ class Lang{
         // TODO allow users to change their language via settings
         
         $this->Auth = Auth::getInstance();
-        
-        //Temporary variable until user settings override
-        require_once("includes/config.inc.php");
-        
-        $setting['language'] = "en";
-        $this->lang = $setting['language'];
+
+        $this->lang = $_SESSION['settings']['language'];
         
         if(file_exists("includes/lang/packs/" .$this->lang.".lang.php")){
             // Language pack exists, lets go ahead and load it.
@@ -49,7 +45,6 @@ class Lang{
     public function replaceBlock($string){
         if (preg_match_all("/{(lang:[^{]*)}/i", $string, $array))
 		{
-           
 			$array = $array[0];
 			$newString = $string;
             
@@ -83,6 +78,10 @@ class Lang{
 			return $string;
 		}  
     }    
+    
+    public function changeLanguage($newLanguage){
+        $this->lang = $newLanguage;
+    }
     
     // Returns the instance of the class
     public static function getInstance(){

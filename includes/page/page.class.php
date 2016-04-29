@@ -11,7 +11,7 @@
 class Page{
     private static $instance;
     
-    private $Lang, $Auth, $User;
+    private $Lang, $Auth, $User, $Mod;
     private $page = null;
     private $pageFullPath = null;
     private $pageHeaderFullPath = null;
@@ -22,6 +22,7 @@ class Page{
     function __construct(){
         $this->Lang = Lang::getInstance();
         $this->Auth = Auth::getInstance();
+        $this->Mod = Mod::getInstance();
         $authenticated = null;
         
         if($_COOKIE['authenticated'] == true){
@@ -110,8 +111,10 @@ class Page{
             include $this->pageHeaderFullPath;
         }
 		include $this->pageFullPath;
+        
 		$myContent = ob_get_clean();
 		ob_start();
+        $myContent = $this->Mod->replaceBlock($myContent);             
 		$myContent = $this->Lang->replaceBlock($myContent);
 		echo $oldOutput;
 		return $myContent;
