@@ -1,3 +1,5 @@
+{mod:meow}
+
 <div class="modules">
     <div class="header">
         <div id="leftRivet">

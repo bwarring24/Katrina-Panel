@@ -45,7 +45,6 @@ class Lang{
     public function replaceBlock($string){
         if (preg_match_all("/{(lang:[^{]*)}/i", $string, $array))
 		{
-           
 			$array = $array[0];
 			$newString = $string;
             

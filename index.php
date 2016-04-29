@@ -73,8 +73,18 @@ if(file_Exists("includes/page/page.class.php")){
     die("Unable to locate the page class, file does not exist");
 }
 
+if(file_Exists("includes/mod/mod.class.php")){
+    require_once("includes/mod/mod.class.php");
+}else{
+    die("Unable to locate the mod class, file does not exist");
+}
+
+
 // Start the Page Engine
 $Page = Page::getInstance();
+
+// Start the Mod Engine
+$Mod = Mod::getInstance();
 
 if(file_exists("includes/tpl/tpl.class.php")){
     require_once("includes/tpl/tpl.class.php");
