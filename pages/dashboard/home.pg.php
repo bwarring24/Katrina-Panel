@@ -1,13 +1,13 @@
-<<<<<<< HEAD
+
 {mod:sidebarLeft}
 
 {mod:sidebarRight}
-=======
+
 
  <div class= "sortable">
 
 {mod:meow}
->>>>>>> 419aba72e3d98d6a91520f75437b7ed270d83f1a
+
 
 <div class="modules">
     <div class="header">
@@ -191,8 +191,6 @@
         </div>
     </div>
 </div>
-<<<<<<< HEAD
 
-=======
 </div>
->>>>>>> 419aba72e3d98d6a91520f75437b7ed270d83f1a
+
