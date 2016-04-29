@@ -6,7 +6,7 @@
     $fname = $User->getFirstName();
     $lname = $User->getLastName();
     $lastIP = $User->getLastIP();
-    $creationDate = $User->getCreationDate();
+    $creationDate = $User->getCreatedDate();
     $lastLogin = $User->getLastLogin();
 
 ?>
