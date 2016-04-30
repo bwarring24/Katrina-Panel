@@ -45,5 +45,27 @@
                     <div class="description"><?php echo $phpVersion; ?></div>
                 </div>
             </div>
+            
+            <div class="c1">
+                <div class="row">
+                    <div class="label" align="left"><h3>{lang:mod-homeDirectoryTitle}</h3></div>
+                    <div class="description"><?php echo $homeDirectory; ?></div>
+                </div>
+            </div>
+            
+            <div class="c2">
+                <div class="row">
+                    <div class="label" align="left"><h3>{lang:mod-storageTitle}</h3></div>
+                    <div class="description"><meter value="<?php echo $storage; ?>" min="0"  max="100"></meter> <?php echo $storage; ?>%</div>
+                </div>
+            </div>
+            
+            <div class="c1">
+                <div class="row">
+                    <div class="label" align="left"><h3>{lang:mod-sqlDatabasesTitle}</h3></div>
+                    <div class="description"><?php echo $databasesCount; ?> / &infin;</div>
+                </div>
+            </div>
+            
         </div>
    </div>

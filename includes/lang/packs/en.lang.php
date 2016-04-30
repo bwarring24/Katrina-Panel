@@ -130,4 +130,9 @@ $langPack['mod']['errorLog'] = "Error Log";
 $langPack['mod']['rawLog'] = "Raw Log";
 $langPack['mod']['shortcuts'] = "Shortcuts";
 $langPack['mod']['group'] = "Group";
+$langPack['mod']['homeDirectoryTitle'] = "Home Directory";
+$langPack['mod']['storageTitle'] = "Disk Space";
+$langPack['mod']['sqlDatabasesTitle'] = "SQL Databases";
+
+
 ?>
