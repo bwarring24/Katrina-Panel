@@ -2,6 +2,11 @@
     $validated = true;
 
     if (isset($_POST['btnSubmit'])) {
+        $_SESSION['firstName'] = $_POST['firstName'];
+        $_SESSION['lastName'] = $_POST['lastName'];
+        $_SESSION['email'] = $_POST['email'];
+        
+        
         $error = null;
 
         if (empty($_POST["firstName"])) {

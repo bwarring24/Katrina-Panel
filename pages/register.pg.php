@@ -8,17 +8,17 @@
 
   <div class="register">
     <div class="frmLabel"><h2>{lang:register-firstName}</h2></div>
-    <div class="frmInput"><h2><input id="txtFirstName" type="text" name="firstName" pattern="^[a-zA-Z]+$" placeholder="{lang:register-firstNamePlaceholder}" oninput="check(this)" size="20" required /><span class="required">*</h2></div>
+    <div class="frmInput"><h2><input id="txtFirstName" type="text" name="firstName" pattern="^[a-zA-Z]+$" placeholder="{lang:register-firstNamePlaceholder}" value="<?php echo $_SESSION['firstName']; ?>" oninput="check(this)" size="20" required /><span class="required">*</h2></div>
   </div>
 
   <div class="register">
     <div class="frmLabel"><h2>{lang:register-lastName}</h2></div>
-    <div class="frmInput"><h2><input id="txtLastName" type="text" name="lastName" pattern="^[a-zA-Z]+$" placeholder="{lang:register-lastNamePlaceholder}" oninput="check(this)" size="20" required/><span class="required">*</span></h2></div>
+    <div class="frmInput"><h2><input id="txtLastName" type="text" name="lastName" pattern="^[a-zA-Z]+$" placeholder="{lang:register-lastNamePlaceholder}" value="<?php echo $_SESSION['lastName']; ?>" oninput="check(this)" size="20" required/><span class="required">*</span></h2></div>
   </div>
 
   <div class="register">
     <div class="frmLabel"><h2>{lang:register-email}</h2></div>
-    <div class="frmInput"><h2><input id="txtEmail" type="email" name="email" placeholder="{lang:register-emailPlaceholder}" size="20" required/><span class="required">*</span></h2></div>
+    <div class="frmInput"><h2><input id="txtEmail" type="email" name="email" placeholder="{lang:register-emailPlaceholder}" value="<?php echo $_SESSION['email']; ?>" size="20" required/><span class="required">*</span></h2></div>
   </div>
 
   <div class="register">
