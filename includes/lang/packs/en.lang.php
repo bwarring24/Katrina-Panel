@@ -133,6 +133,9 @@ $langPack['mod']['group'] = "Group";
 $langPack['mod']['homeDirectoryTitle'] = "Home Directory";
 $langPack['mod']['storageTitle'] = "Disk Space";
 $langPack['mod']['sqlDatabasesTitle'] = "SQL Databases";
-
+$langPack['mod']['memoryTitle'] = "RAM";
+$langPack['mod']['OSTitle'] = "Operating System";
+$langPack['mod']['uptimeTitle'] = "Uptime";
+$langPack['mod']['cpuLoadTitle'] = "Average Load";
 
 ?>
