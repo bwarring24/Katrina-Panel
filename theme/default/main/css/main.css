@@ -35,7 +35,7 @@ h3 {
 }
 
 meter{
-    width: 75%;
+    width: 60%;
 }
 
 /* Header */
@@ -118,7 +118,6 @@ meter{
 
 .sidebarContainer{
     width: 100%;
-    height: 110%;
     background-image: url('../images/headerBg.png');
     background-repeat: repeat-x;
     border-color: #B6B6B6;
@@ -206,7 +205,8 @@ meter{
 .modules{
     width: 51.5%;
     height: auto;
-    display: inline-block;
+    position: relative;
+    margin-left: 24.25%;
     border-color: #B6B6B6;
     border-width: 1px;
     border-style: solid;

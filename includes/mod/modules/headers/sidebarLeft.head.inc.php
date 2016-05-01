@@ -32,4 +32,6 @@
     $uptime = shell_exec("uptime | awk '{print $3}'");
     
     $loadAverage = shell_exec("uptime | awk '{print $12}'") * 100;
+    
+    $publicIP = $_SERVER['REMOTE_ADDR'];
 ?>

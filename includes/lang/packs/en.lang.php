@@ -137,5 +137,9 @@ $langPack['mod']['memoryTitle'] = "RAM";
 $langPack['mod']['OSTitle'] = "Operating System";
 $langPack['mod']['uptimeTitle'] = "Uptime";
 $langPack['mod']['cpuLoadTitle'] = "Average Load";
+$langPack['mod']['ipTitle'] = "Public IP";
 
+// Create Group pack
+$langPack['createGroup']['title'] = "Create Group";
+$langPack['createGroup']['groupNamePlaceholder'] = "Group Name";
 ?>
