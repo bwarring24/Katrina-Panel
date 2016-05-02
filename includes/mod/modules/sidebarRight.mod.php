@@ -15,15 +15,15 @@
         </div>
             
         <div class="row rowStyle">
-            <div class="label" align="left"><h3><a href="?p=profile">{lang:mod-viewProfile}</a></h3></div>
+            <div class="label"><h3><a href="?p=profile">{lang:mod-viewProfile}</a></h3></div>
         </div>
             
         <div class="row rowStyle">
-            <div class="label" align="left"><h3><a href="?p=shortcuts">{lang:mod-shortcuts}</a></h3></div>
+            <div class="label"><h3><a href="?p=shortcuts">{lang:mod-shortcuts}</a></h3></div>
         </div>
             
         <div class="row rowStyle">
-            <div class="label" align="left"><h3><a href="?p=logout">{lang:mod-logout}</a></h3></div>
+            <div class="label"><h3><a href="?p=logout">{lang:mod-logout}</a></h3></div>
         </div>
     </div>
 </div>  

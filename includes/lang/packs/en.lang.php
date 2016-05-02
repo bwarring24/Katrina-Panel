@@ -123,7 +123,7 @@ $langPack['mod']['groupDelete'] = "Delete Group";
 $langPack['mod']['groupCreate'] = "Create Group";
 $langPack['mod']['phpMyAdmin'] = "phpMyAdmin";
 $langPack['mod']['database'] = "Database";
-$langPack['mod']['logs'] - "Logs";
+$langPack['mod']['logs'] = "Logs";
 $langPack['mod']['pageHits'] = "Page Hits";
 $langPack['mod']['bandwidth'] = "Bandwidth";
 $langPack['mod']['errorLog'] = "Error Log";

@@ -319,6 +319,7 @@ meter{
     width: 50%;
     display: inline-block;
     margin: 0px;
+    text-align: left;
 }
 
 .description{

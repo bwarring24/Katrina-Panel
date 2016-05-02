@@ -1,7 +1,7 @@
-<!DOCTYPE >
+<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="ContetType" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
     <title>{lang:pageName-pageTitle}</title>
     <link href="theme/default/login/css/styles.css" rel="stylesheet" type="text/css" />
     <script src="javascript/sortable.js" language="javascript" type="text/javascript"></script>

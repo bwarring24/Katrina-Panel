@@ -20,36 +20,38 @@
         </div>
     </div>
     <div class= "sortable">
-    <div class="module">
-        <img class="icon" src="theme/default/main/images/modules/user.png" alt="{lang:mod-user}" />
-        <div class="caption">{lang:mod-user}</div>
+        <div class="module">
+            <img class="icon" src="theme/default/main/images/modules/user.png" alt="{lang:mod-user}" />
+            <div class="caption">{lang:mod-user}</div>
+        </div>
+        
+        <div class="module">
+            <img class="icon" src="theme/default/main/images/modules/userAdd.png" alt="{lang:mod-userAdd}" />
+            <div class="caption">{lang:mod-userAdd}</div>
+        </div>
+        
+        <div class="module">       
+            <img class="icon" src="theme/default/main/images/modules/userDelete.png" alt="{lang:mod-userDelete}" />
+            <div class="caption">{lang:mod-userDelete}</div>
+        </div>
+        
+        <div class="module">       
+            <img class="icon" src="theme/default/main/images/modules/group.png" alt="{lang:mod-group}" />
+            <div class="caption">{lang:mod-group}</div>
+        </div>
+        
+        <a href="?p=createGroup">
+            <div class="module">       
+                <img class="icon" src="theme/default/main/images/modules/groupAdd.png" alt="{lang:mod-groupCreate}" />
+                <div class="caption">{lang:mod-groupCreate}</div>
+            </div>
+        </a>
+        
+        <div class="module">       
+            <img class="icon" src="theme/default/main/images/modules/groupDelete.png" alt="{lang:mod-groupDelete}" />
+            <div class="caption">{lang:mod-groupDelete}</div>
+        </div>
     </div>
-    
-    <div class="module">
-        <img class="icon" src="theme/default/main/images/modules/userAdd.png" alt="{lang:mod-userAdd}" />
-        <div class="caption">{lang:mod-userAdd}</div>
-    </div>
-    
-    <div class="module">       
-        <img class="icon" src="theme/default/main/images/modules/userDelete.png" alt="{lang:mod-userDelete}" />
-        <div class="caption">{lang:mod-userDelete}</div>
-    </div>
-    
-    <div class="module">       
-        <img class="icon" src="theme/default/main/images/modules/group.png" alt="{lang:mod-group}" />
-        <div class="caption">{lang:mod-group}</div>
-    </div>
-    
-    <div class="module">       
-        <img class="icon" src="theme/default/main/images/modules/groupAdd.png" alt="{lang:mod-groupCreate}" />
-        <div class="caption">{lang:mod-groupCreate}</div>
-    </div>
-    
-    <div class="module">       
-        <img class="icon" src="theme/default/main/images/modules/groupDelete.png" alt="{lang:mod-groupDelete}" />
-        <div class="caption">{lang:mod-groupDelete}</div>
-    </div>
-</div>
 </div>
 
 
@@ -68,22 +70,22 @@
             {lang:home-fileModules}
         </div>
     </div>
-     <div class= "sortable">
-    <div class="module">
-        <img class="icon" src="theme/default/main/images/modules/locked.png" alt="{lang:mod-passwordProtect}" />
-        <div class="caption">{lang:mod-passwordProtect}</div>
+    <div class= "sortable">
+        <div class="module">
+            <img class="icon" src="theme/default/main/images/modules/locked.png" alt="{lang:mod-passwordProtect}" />
+            <div class="caption">{lang:mod-passwordProtect}</div>
+        </div>
+        
+        <div class="module">
+            <img class="icon" src="theme/default/main/images/modules/error.png" alt="{lang:mod-errorPages}" />
+            <div class="caption">{lang:mod-errorPages}</div>
+        </div>
+        
+        <div class="module">       
+            <img class="icon" src="theme/default/main/images/modules/folder.png" alt="{lang:mod-fileManager}" />
+            <div class="caption">{lang:mod-fileManager}</div>
+        </div>
     </div>
-    
-    <div class="module">
-        <img class="icon" src="theme/default/main/images/modules/error.png" alt="{lang:mod-errorPages}" />
-        <div class="caption">{lang:mod-errorPages}</div>
-    </div>
-    
-    <div class="module">       
-        <img class="icon" src="theme/default/main/images/modules/folder.png" alt="{lang:mod-fileManager}" />
-        <div class="caption">{lang:mod-fileManager}</div>
-    </div>
-</div>
 </div>
 
 
@@ -102,17 +104,21 @@
             {lang:home-databases}
         </div>
     </div>
-     <div class= "sortable">
-    <div class="module">       
-        <img class="icon" src="theme/default/main/images/modules/phpmyadmin.png" alt="{lang:mod-phpMyAdmin}" />
-        <div class="caption">{lang:mod-phpMyAdmin}</div>
+    <div class= "sortable">
+        <a href="/phpmyadmin">
+            <div class="module">       
+                <img class="icon" src="theme/default/main/images/modules/phpmyadmin.png" alt="{lang:mod-phpMyAdmin}" />
+                <div class="caption">{lang:mod-phpMyAdmin}</div>
+            </div>
+        </a>
+        
+        <a href="?p=database">
+            <div class="module">       
+                <img class="icon" src="theme/default/main/images/modules/mysql.png" alt="{lang:mod-database}" />
+                <div class="caption">{lang:mod-database}</div>
+            </div>
+        </a>
     </div>
-    
-    <div class="module">       
-        <img class="icon" src="theme/default/main/images/modules/mysql.png" alt="{lang:mod-database}" />
-        <div class="caption">{lang:mod-database}</div>
-    </div>
-</div>
 </div>
 
 <div class="modules">
@@ -129,27 +135,27 @@
             {lang:home-logs}
         </div>
     </div>
-     <div class= "sortable">
-    <div class="module">       
-        <img class="icon" src="theme/default/main/images/modules/pageHits.png" alt="{lang:mod-pageHits}" />
-        <div class="caption">{lang:mod-pageHits}</div>
+    <div class= "sortable">
+        <div class="module">       
+            <img class="icon" src="theme/default/main/images/modules/pageHits.png" alt="{lang:mod-pageHits}" />
+            <div class="caption">{lang:mod-pageHits}</div>
+        </div>
+        
+        <div class="module">       
+            <img class="icon" src="theme/default/main/images/modules/bandwidth.png" alt="{lang:mod-bandwidth}" />
+            <div class="caption">{lang:mod-bandwidth}</div>
+        </div>
+        
+        <div class="module">       
+            <img class="icon" src="theme/default/main/images/modules/errorLog.png" alt="{lang:mod-errorLog}" />
+            <div class="caption">{lang:mod-errorLog}</div>
+        </div>
+        
+        <div class="module">       
+            <img class="icon" src="theme/default/main/images/modules/log.png" alt="{lang:mod-rawLog}" />
+            <div class="caption">{lang:mod-rawLog}</div>
+        </div>
     </div>
-    
-    <div class="module">       
-        <img class="icon" src="theme/default/main/images/modules/bandwidth.png" alt="{lang:mod-bandwidth}" />
-        <div class="caption">{lang:mod-bandwidth}</div>
-    </div>
-    
-    <div class="module">       
-        <img class="icon" src="theme/default/main/images/modules/errorLog.png" alt="{lang:mod-errorLog}" />
-        <div class="caption">{lang:mod-errorLog}</div>
-    </div>
-    
-     <div class="module">       
-        <img class="icon" src="theme/default/main/images/modules/log.png" alt="{lang:mod-rawLog}" />
-        <div class="caption">{lang:mod-rawLog}</div>
-    </div>
-</div>
 </div>
 
 

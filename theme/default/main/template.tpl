@@ -1,7 +1,7 @@
-<!DOCTYPE >
+<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="ContetType" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
     <title>{lang:pageName-pageTitle}</title>
   <!--  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">-->
     <link href="theme/default/main/css/main.css" rel="stylesheet" type="text/css" />
