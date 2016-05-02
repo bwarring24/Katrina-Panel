@@ -142,4 +142,7 @@ $langPack['mod']['ipTitle'] = "Public IP";
 // Create Group pack
 $langPack['createGroup']['title'] = "Create Group";
 $langPack['createGroup']['groupNamePlaceholder'] = "Group Name";
+$langPack['createGroup']['groupName'] = "Group Name";
+$langPack['createGroup']['permissions'] = "Group Permissions";
+
 ?>

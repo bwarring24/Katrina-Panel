@@ -5,11 +5,9 @@
 
  });
 
-$(function() {
-    $( ".modules" ).accordion({
-      icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" },
-      heightStyle: "content",
-      collapsible: true
-    });
+$(function() {  
+  $( ".modules" ).accordion({
+    heightStyle: "content",
+    collapsible: true
   });
-
+});

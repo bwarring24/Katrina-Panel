@@ -4,19 +4,15 @@
 
 <div id="sidebarLeft">
     <div class="sidebarContainer">
-        <div class="header">
-            <div id="leftRivet">
-                <img src="theme/default/main/images/rivets.png" alt="" />
-            </div>
-                                
-            <div id="rightRivet">
-                <img src="theme/default/main/images/rivets.png" alt="" />
-            </div>
-                                
-            <div id="headerTitle">
-                {lang:mod-statistics}
-            </div>
+        <div class="headerBar">
+        <img class="leftRivet" src="theme/default/login/images/rivets.png" alt="" />
+                    
+        <div class="headerTitle">
+            {lang:mod-statistics}
         </div>
+                    
+        <img class="rightRivet" src="theme/default/login/images/rivets.png" alt="" />
+    </div>
             
         <div class="row rowStyle">
             <div class="label"><h3>{lang:mod-serverNameTitle}</h3></div>

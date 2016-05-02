@@ -1,17 +1,13 @@
 <div id="sidebarRight">
     <div class="sidebarContainer">
-        <div class="header">
-            <div id="leftRivet">
-                <img src="theme/default/main/images/rivets.png" alt="" />
+        <div class="headerBar">
+            <img class="leftRivet" src="theme/default/login/images/rivets.png" alt="" />
+                        
+            <div class="headerTitle">
+                {lang:mod-statistics}
             </div>
-                                
-            <div id="rightRivet">
-                <img src="theme/default/main/images/rivets.png" alt="" />
-            </div>
-                                
-            <div id="headerTitle">
-                {lang:mod-account}
-            </div>
+                        
+            <img class="rightRivet" src="theme/default/login/images/rivets.png" alt="" />
         </div>
             
         <div class="row rowStyle">

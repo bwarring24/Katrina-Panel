@@ -67,6 +67,16 @@ class DB{
     public function nextRecord(){
 
     }
+    
+    // Print out all records
+    public function allRecords(){
+        $records = array();
+        while($row = mysqli_fetch_assoc($this->result)) {
+            $records[] = $row;
+       }
+
+        return $records; 
+    }
 
     // Sanatize given string to protect against MySQL injections
     public function sanatize($string){
