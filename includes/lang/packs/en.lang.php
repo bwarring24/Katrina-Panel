@@ -144,5 +144,6 @@ $langPack['createGroup']['title'] = "Create Group";
 $langPack['createGroup']['groupNamePlaceholder'] = "Group Name";
 $langPack['createGroup']['groupName'] = "Group Name";
 $langPack['createGroup']['permissions'] = "Group Permissions";
-
+$langPack['createGroup']['groupNameExists'] = "Group name exists";
+$langPack['createGroup']['success'] = "Successfuly created group!";
 ?>

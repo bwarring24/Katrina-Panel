@@ -9,6 +9,11 @@
 <div class="line">
 </div>
 
+<?php
+    echo $error;
+    echo $msg;
+?>
+
 <form name="frmChange" method="post" action="">
     <div class="row">
       <div class="frmLabel"><h2>{lang:createGroup-groupName}</h2></div>
@@ -17,7 +22,7 @@
     
     <div class="row">
       <div class="frmLabel"><h2>{lang:createGroup-permissions}</h2></div>
-      <div class="frmInput"><h2><?php echo $chkBoxes; ?></h2></div>
+      <div class="frmInput"><?php echo $chkBoxes; ?></div>
     </div>
 
     <div id="line">

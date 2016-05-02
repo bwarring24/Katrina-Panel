@@ -278,6 +278,7 @@ meter{
     width: 30%;
     display: inline-block;
     margin: 0px;
+    vertical-align: top;
 }
 
 .frmInput{
@@ -328,6 +329,10 @@ meter{
     width: 45%;
     display: inline-block;
     margin: 0px;
+}
+
+#ulTitle{
+    text-align: left;
 }
 
 /* Footer [Start] */
