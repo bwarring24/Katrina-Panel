@@ -7,12 +7,9 @@
 
 $(function() {
     $( ".modules" ).accordion({
-      active: true,
       icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" },
-      heightStyle: "content"
+      heightStyle: "content",
+      collapsible: true
     });
   });
 
-$(document).ready(function() {
-  $(".modules").accordion("option", "active", 1);
-});
