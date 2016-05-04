@@ -7,7 +7,8 @@
     <link href="theme/default/main/css/main.css" rel="stylesheet" type="text/css" />
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script src="javascript/sortable.js" language="javascript" type="text/javascript"></script>
+    <script src="javascript/sortable.js" type="text/javascript"></script>
+    <script src="javascript/checkbox.js" type="text/javascript"></script>
 
 </head>
 <body>

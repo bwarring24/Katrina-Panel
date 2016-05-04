@@ -49,6 +49,8 @@
     $chkBoxes = "";
     $curCategory = "";
     $count = 0;
+    $i = 1;
+    
     foreach($records as $row){
         if($curCategory != $row['category']){
             // Create new category index
@@ -57,14 +59,15 @@
             }else{
                 $chkBoxes .= '</ul>';
             }
-            
+            $i = 1;
             $curCategory = $row['category'];
-            $chkBoxes .= '<div class="row"><input type="checkbox" name="categories[]" value="'.$row['category'].'" /> '.$row['category'].'</div><ul>';
+            $chkBoxes .= '<div class="row"><input type="checkbox" id="category" name="categories[]" value="'.$row['category'].'" /> '.$row['category'].'</div><ul>';
         }
         
         
         $chkBoxes .= '<li>';
-        $chkBoxes .= '<div class="row"><input type="checkbox" name="modules[]" value="'.$row['name'].'" /> '.$row['prettyName'].' </div>';
+        $chkBoxes .= '<div class="row"><input type="checkbox" id="'.$curCategory.'-'.$i.'" name="modules[]" value="'.$row['name'].'" /> '.$row['prettyName'].' </div>';
         $chkBoxes .= '</li>';
+        $i++;
     }
 ?>

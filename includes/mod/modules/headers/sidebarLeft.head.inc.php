@@ -34,4 +34,32 @@
     $loadAverage = shell_exec("uptime | awk '{print $12}'") * 100;
     
     $publicIP = $_SERVER['REMOTE_ADDR'];
+    $valid = true;
+    $i = 1;
+    
+    $accessLog = shell_exec("cat /var/log/apache2/access.log | grep May | awk '{print $7}'");
+    
+    while($valid){
+        if($i > 1){
+            shell_exec("gunzip /var/log/apache2/access.log.".$i.".gz");
+        }
+        $tmp = shell_exec("cat /var/log/apache2/access.log.".$i." | grep May | awk '{print $7}'");
+        if($tmp == ""){
+            $valid = false;
+        }
+        $accessLog .= $tmp;
+        $i++;        
+    }
+    $bandwidth = 0;
+    
+    foreach(preg_split("/((\r?\n)|(\r\n?))/", $accessLog) as $line){
+        if(file_exists($homeDirectory . $line)){
+            $bandwidth += filesize($homeDirectory . $line);
+        }
+    }
+    
+     $bandwidth = floor($bandwidth / 1048576);
+
+    
+    
 ?>

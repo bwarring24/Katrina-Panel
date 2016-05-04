@@ -1,8 +1,9 @@
 <?php
-    $db['host'] = "localhost"; // Server IP of the database
-    $db['user'] = "bwarrin2"; // The user who has access to the database
-    $db['pass'] = "dokrNO50"; // The password for the above user
-    $db['name'] = "bwarrin2"; // The name of our database
+    $db['host'] = "server.blakewarrington.net"; // Server IP of the database
+    $db['user'] = "gthorson"; // The user who has access to the database
+    $db['pass'] = "meowmeowKittyKat"; // The password for the above user
+    $db['name'] = "kp"; // The name of our database
+    
     $_SESSION['settings'] = array();
     $_SESSION['settings']['maintenance'] = false; // If set to true, website will be down and a maitnence page will be shown
     $_SESSION['settings']['debug'] = true; // If set to true, error reporting will be enabled (a.k.a. debug mode)

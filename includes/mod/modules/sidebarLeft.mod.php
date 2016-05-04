@@ -50,6 +50,11 @@
         </div>
 
         <div class="row rowStyle">
+            <div class="label"><h3>{lang:mod-bandwidthTitle}</h3></div>
+            <div class="description"><?php echo $bandwidth; ?> MB / &infin;</div>
+        </div>
+
+        <div class="row rowStyle">
             <div class="label"><h3>{lang:mod-storageTitle}</h3></div>
             <div class="description"><meter value="<?php echo $storage; ?>" min="0"  max="100"></meter> <?php echo $storage; ?>%</div>
         </div>

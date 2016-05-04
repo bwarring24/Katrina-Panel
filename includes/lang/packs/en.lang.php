@@ -138,12 +138,41 @@ $langPack['mod']['OSTitle'] = "Operating System";
 $langPack['mod']['uptimeTitle'] = "Uptime";
 $langPack['mod']['cpuLoadTitle'] = "Average Load";
 $langPack['mod']['ipTitle'] = "Public IP";
+$langPack['mod']['bandwidthTitle'] = "Bandwidth";
 
 // Create Group pack
+$langPack['createGroup']['pageTitle'] = "Create Group";
 $langPack['createGroup']['title'] = "Create Group";
 $langPack['createGroup']['groupNamePlaceholder'] = "Group Name";
 $langPack['createGroup']['groupName'] = "Group Name";
 $langPack['createGroup']['permissions'] = "Group Permissions";
 $langPack['createGroup']['groupNameExists'] = "Group name exists";
 $langPack['createGroup']['success'] = "Successfuly created group!";
+
+
+// Database Pack
+$langPack['database']['pageTitle'] = "Databases";
+$langPack['database']['title'] = "Databases";
+$langPack['database']['databaseTitle'] = "Database";
+$langPack['database']['backupTitle'] = "Backup";
+$langPack['database']['sizeTitle'] = "Size";
+$langPack['database']['deleteTitle'] = "Delete";
+$langPack['database']['downloadBackup'] = "Download Backup";
+$langPack['database']['uploadFile'] = "Upload database file";
+$langPack['database']['createDatabase'] = "Create a database";
+
+// Create Database Pack
+$langPack['createDatabase']['pageTitle'] = "Create Database";
+$langPack['createDatabase']['title'] = "Create Database";
+$langPack['createDatabase']['databaseName'] = "Database Name";
+$langPack['createDatabase']['databaseUserName'] = "Database User";
+$langPack['createDatabase']['userPassword'] = "Password";
+$langPack['createDatabase']['retypeUserPassword'] = "Retype Password";
+$langPack['createDatabase']['databaseNamePlaceholder'] = "MyDatabase";
+$langPack['createDatabase']['databaseUserNamePlaceholder'] = "dbUser";
+$langPack['createDatabase']['userPasswordPlaceholder'] = "";
+$langPack['createDatabase']['retypeUserPasswordPlaceholder'] = "";
+$langPack['createDatabase']['passDoesNotMatch'] = "Passwords do not match";
+$langPack['createDatabase']['successfulyCreatedDatabase'] = "Successfuly Created Database";
+
 ?>
