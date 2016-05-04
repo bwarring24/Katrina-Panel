@@ -5,7 +5,7 @@
 
 
 <div class= "sortable">
-<div class="modules">
+<div class="modules" id="cat-1">
     <div class="headerBar">
         <img class="leftRivet" src="theme/default/login/images/rivets.png" alt="" />
                     
@@ -63,7 +63,7 @@
 
 
 
-<div class="modules">
+<div class="modules" id = "cat-2">
     <div class="headerBar">
         <img class="leftRivet" src="theme/default/login/images/rivets.png" alt="" />
                     
@@ -93,7 +93,7 @@
 
 
 
-<div class="modules">
+<div class="modules" id = "cat-3">
     <div class="headerBar">
         <img class="leftRivet" src="theme/default/login/images/rivets.png" alt="" />
                     
@@ -121,7 +121,7 @@
     </div>
 </div>
 
-<div class="modules">
+<div class="modules" id="cat_4">
     <div class="headerBar">
         <img class="leftRivet" src="theme/default/login/images/rivets.png" alt="" />
                     
@@ -156,7 +156,7 @@
 
 
 
-<div class="modules">
+<div class="modules" id = "cat-5">
     <div class="headerBar">
         <img class="leftRivet" src="theme/default/login/images/rivets.png" alt="" />
                     
@@ -170,7 +170,7 @@
 
 
 
-<div class="modules">
+<div class="modules" id = "cat-6">
     <div class="headerBar">
         <img class="leftRivet" src="theme/default/login/images/rivets.png" alt="" />
                     

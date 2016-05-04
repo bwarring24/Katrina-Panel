@@ -3,7 +3,7 @@
     $db['user'] = "gthorson"; // The user who has access to the database
     $db['pass'] = "meowmeowKittyKat"; // The password for the above user
     $db['name'] = "kp"; // The name of our database
-    
+
     $_SESSION['settings'] = array();
     $_SESSION['settings']['maintenance'] = false; // If set to true, website will be down and a maitnence page will be shown
     $_SESSION['settings']['debug'] = true; // If set to true, error reporting will be enabled (a.k.a. debug mode)
