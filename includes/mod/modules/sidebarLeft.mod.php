@@ -76,7 +76,7 @@
             
         <div class="row rowStyle">
             <div class="label"><h3>{lang:mod-uptimeTitle}</h3></div>
-            <div class="description"><?php echo $uptime; ?> days</div>
+            <div class="description"><?php echo $uptime; ?></div>
         </div>
     </div>
 </div>

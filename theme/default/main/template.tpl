@@ -42,7 +42,7 @@
                 
                 <div id="searchCenter">
                     <form name="frmSearch" method="GET">
-                        <input id="txtQuery" type="text" name="query" style="background-color: #7C7B7B; height: 20px; width: 100%; color: #FFFFFF; border: 0px;" />
+                        <input id="txtQuery" type="text" name="query" style="background-color: #7C7B7B; height: 18px; width: 100%; color: #FFFFFF; border: 0px;" />
                     </form>
                 </div>
             </div>

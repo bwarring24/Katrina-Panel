@@ -60,8 +60,6 @@ if($val != ""){
 			
 			if($customModViewExists){
 				// Custom view already exists lets do some complicated stuff
-				echo "PRIORITY: " . $i . " <br/ >";
-				echo "CatName: " . $catName . "<br />";
 				$sql = "UPDATE `moduleView` SET moduleName='$category[1]' WHERE priority='$i' AND userID='$userID' AND categoryName='$catName'";
 				$conn->query($sql);
 			}else{

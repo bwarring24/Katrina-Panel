@@ -29,7 +29,15 @@
     $os = shell_exec("lsb_release -a | grep Distributor | awk '{print $3}'");
     $os = $os . " " . shell_exec("lsb_release -a | grep Release | awk '{print $2}'");
     
-    $uptime = shell_exec("uptime | awk '{print $3}'");
+    $uptime = explode(',', shell_exec("uptime | awk '{print $3}'"));
+    $period = shell_exec("uptime | awk '{print $4}'");
+    
+    if(is_numeric($period)){
+        $uptime = $uptime[0] . " " . shell_exec("uptime | awk '{print $4}'");    
+    }else{
+        $uptime = explode(':', $uptime[0]);
+        $uptime = $uptime[0] . " hours";
+    }
     
     $loadAverage = shell_exec("uptime | awk '{print $12}'") * 100;
     
