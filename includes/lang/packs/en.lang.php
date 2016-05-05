@@ -103,8 +103,8 @@ $langPack['logout']['manual'] = "Click here if you are not re-directed automatic
 
 // Modules Pack
 $langPack['mod']['user'] = "User";
-$langPack['mod']['userAdd'] = "Add User";
-$langPack['mod']['userDelete'] = "Delete User";
+$langPack['mod']['addUser'] = "Add User";
+$langPack['mod']['deleteUser'] = "Delete User";
 $langPack['mod']['passwordProtect'] = "Password Protect";
 $langPack['mod']['errorPages'] = "Error Pages";
 $langPack['mod']['fileManager'] = "File Manager";
@@ -119,8 +119,8 @@ $langPack['mod']['viewProfile'] = "View Profile";
 $langPack['mod']['emailTitle'] = "Email";
 $langPack['mod']['logout'] = "Logout!";
 $langPack['mod']['databases'] = "Databases";
-$langPack['mod']['groupDelete'] = "Delete Group";
-$langPack['mod']['groupCreate'] = "Create Group";
+$langPack['mod']['deleteGroup'] = "Delete Group";
+$langPack['mod']['createGroup'] = "Create Group";
 $langPack['mod']['phpMyAdmin'] = "phpMyAdmin";
 $langPack['mod']['database'] = "Database";
 $langPack['mod']['logs'] = "Logs";

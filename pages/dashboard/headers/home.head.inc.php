@@ -33,30 +33,46 @@ if($val != ""){
 	$result = $conn->query($sql);
 	$categoryViewCount = mysqli_num_rows($result);
 	
-	$sql = "SELECT * FROM `moduleView` WHERE userID='".$userID."'";
-	$result = $conn->query($sql);
-	$moduleViewCount = mysqli_num_rows($result);
+	
 	
 	$i = 0;
 
-	if($rowCcategoryViewCountount > 1){
+	if($categoryViewCount > 1){
 		$customViewExists = true;
 	}
 	
-	if($moduleViewCount > 1){
-		$customModViewExists = true;
-	}
 
 	foreach ($data as $value) {
 		$category = explode('=', $value);
+		
 		if($category[0] == "mod[]"){
+			if($i == 0){
+				$sql = "SELECT * FROM `moduleView` WHERE userID='$userID' AND moduleName='$category[1]'";
+				$result = $conn->query($sql);
+				$row = $result->fetch_assoc();
+				$catName = $row['categoryName'];
+				$moduleViewCount = mysqli_num_rows($result);
+				
+				if($moduleViewCount != 0){
+					$customModViewExists = true;
+				}
+			}
+			
 			if($customModViewExists){
 				// Custom view already exists lets do some complicated stuff
-				$sql = "UPDATE `moduleView` SET moduleName='$category[1]' WHERE priority='$i' AND userID='$userID'";
+				echo "PRIORITY: " . $i . " <br/ >";
+				echo "CatName: " . $catName . "<br />";
+				$sql = "UPDATE `moduleView` SET moduleName='$category[1]' WHERE priority='$i' AND userID='$userID' AND categoryName='$catName'";
 				$conn->query($sql);
 			}else{
-				// No custom view created yet so go on with life			
-				$sql = "INSERT INTO `moduleView` (userID, moduleName, priority) VALUES('$userID', '$category[1]', '$i')";
+				// No custom view created yet so go on with life
+				
+				$sql = "SELECT * FROM `modules` WHERE name='$category[1]'";
+				$result = $conn->query($sql);
+				$row = $result->fetch_assoc();
+				$cat = $row['category'];
+				
+				$sql = "INSERT INTO `moduleView` (userID, moduleName, categoryName, priority) VALUES('$userID', '$category[1]', '$cat', '$i')";
 				$conn->query($sql);		
 			}
 		}else{
@@ -98,25 +114,33 @@ if($val != ""){
 		$DB->query($sql);
 		$categories = $DB->allRecords();
 	}
-	
-	
-	$sql = "SELECT * FROM `moduleView` WHERE userID='$userID' ORDER BY 'priority' ASC";
-	
-	$DB->query($sql);
-	$modules = $DB->allRecords();	
-	
-	if($DB->rowCount < 1){
-		// Choose default view
-		
-		$sql = "SELECT * FROM `moduleView` WHERE userID='0' ORDER BY 'priority' ASC";
-	
-		$DB->query($sql);
-		$modules = $DB->allRecords();
-	}
-	
+
+	$modules = "";
 	$output = "";
+	$curCategory = "";
+	$i = 0;
 	
 	foreach($categories as $category){
+		if($i == 0){
+			$curCategory = $category['categoryName'];
+			$i++;
+			
+			$sql = "SELECT * FROM `moduleView` WHERE userID='$userID' AND categoryName='$curCategory' ORDER BY 'priority' ASC";
+	
+			$DB->query($sql);
+			$modules = $DB->allRecords();	
+			
+			if($DB->rowCount() < 1){
+				// Choose default view
+				
+				$sql = "SELECT * FROM `moduleView` WHERE userID='0' AND categoryName='$curCategory' ORDER BY 'priority' ASC";
+			
+				$DB->query($sql);
+				$modules = $DB->allRecords();
+			}
+		}
+		
+		
 		$output .= '<div class="modules" id="cat-'.$category["categoryName"].'">
         <div class="headerBar">
             <img class="leftRivet" src="theme/default/login/images/rivets.png" alt="" />
@@ -129,9 +153,27 @@ if($val != ""){
         </div>
         <div class="sortable">';
 		
-		foreach($modules as $module){
+		if($curCategory != $category['categoryName']){
+			$curCategory = $category['categoryName'];
 			
-			if($module['categoryName'] == $category['categoryName']){
+			$sql = "SELECT * FROM `moduleView` WHERE userID='$userID' AND categoryName='$curCategory' ORDER BY 'priority' ASC";
+	
+			$DB->query($sql);
+			$modules = $DB->allRecords();	
+			
+			if($DB->rowCount() < 1){
+				// Choose default view
+				
+				$sql = "SELECT * FROM `moduleView` WHERE userID='0' AND categoryName='$curCategory' ORDER BY 'priority' ASC";
+			
+				$DB->query($sql);
+				$modules = $DB->allRecords();
+			}
+		}
+		
+		
+		foreach($modules as $module){
+			if($module['categoryName'] == $category['categoryName']){			
 				$output .= '<div class="module" id="mod-'.$module["moduleName"].'">
 					<a href="?p='.$module["moduleName"].'">
 						<img class="icon" src="theme/default/main/images/modules/'.$module["moduleName"].'.png" alt="{lang:mod-user}" />
@@ -147,3 +189,5 @@ if($val != ""){
 
 
 ?>
+
+<div id="response"></div>
