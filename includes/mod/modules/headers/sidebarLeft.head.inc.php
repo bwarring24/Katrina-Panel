@@ -36,7 +36,8 @@
         $uptime = $uptime[0] . " " . shell_exec("uptime | awk '{print $4}'");    
     }else{
         $uptime = explode(':', $uptime[0]);
-        $uptime = $uptime[0] . " hours";
+        $period = explode(',', $period);
+        $uptime = $uptime[0] . " " . $period[0];
     }
     
     $loadAverage = shell_exec("uptime | awk '{print $12}'") * 100;
