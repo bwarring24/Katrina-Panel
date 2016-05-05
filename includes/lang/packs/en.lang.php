@@ -65,6 +65,7 @@ $langPack['home']['thirdPartyPackagesModules'] = "Third Party Packages";
 $langPack['home']['logsModules'] = "Logs";
 $langPack['home']['databaseModules'] = "Databases";
 
+
 //Profile
 $langPack['profile']['pageTitle'] = "Profile - Katrina Panel";
 $langPack['profile']['title'] = "Profile Information";
@@ -76,6 +77,7 @@ $langPack['profile']['lastIP'] = "Last IP";
 $langPack['profile']['lastLogin'] = "Last Login";
 $langPack['profile']['delete'] = "Delete Account";
 $langPack['profile']['change'] = "Change Password";
+$langPack['profile']['language'] = "Language";
 
 
 // Delete Pack
@@ -140,6 +142,7 @@ $langPack['mod']['cpuLoadTitle'] = "Average Load";
 $langPack['mod']['ipTitle'] = "Public IP";
 $langPack['mod']['bandwidthTitle'] = "Bandwidth";
 
+
 // Create Group pack
 $langPack['createGroup']['pageTitle'] = "Create Group";
 $langPack['createGroup']['title'] = "Create Group";
@@ -160,6 +163,7 @@ $langPack['database']['deleteTitle'] = "Delete";
 $langPack['database']['downloadBackup'] = "Download Backup";
 $langPack['database']['uploadFile'] = "Upload database file";
 $langPack['database']['createDatabase'] = "Create a database";
+
 
 // Create Database Pack
 $langPack['createDatabase']['pageTitle'] = "Create Database";

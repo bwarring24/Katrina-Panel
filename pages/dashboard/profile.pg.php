@@ -35,6 +35,11 @@
     <div class="frmInput"><?php echo $lastLogin ?></div>
 </div>
 
+<div class="row">
+    <div class="frmLabel" align="left"><h2>{lang:profile-language}</h2></div>
+    <div class="frmInput"><?php echo $language ?></div>
+</div>
+
 <div align="center"><a href="index.php?p=changePassword"> {lang:profile-change}</a></div>
 
 <div align="center"><a  href="index.php?p=deleteAccount">{lang:profile-delete}</a></div>

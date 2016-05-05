@@ -69,6 +69,8 @@ meter{
 
 #bannerRight{
     float: right;
+    right: -11px;
+    position: relative;
 }
 
 #shortcuts{

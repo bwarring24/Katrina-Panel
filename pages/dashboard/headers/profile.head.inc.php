@@ -8,5 +8,5 @@
     $lastIP = $User->getLastIP();
     $creationDate = $User->getCreatedDate();
     $lastLogin = $User->getLastLogin();
-
+    $language = $User->getLanguage();
 ?>
