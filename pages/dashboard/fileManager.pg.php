@@ -2,6 +2,9 @@
     echo $navigationURL;
 ?>
 
+<br />
+<br />
+
 <table width="100%" cellspacing="0" cellpading="0" id="fileTable">
     <thead>
         <tr>

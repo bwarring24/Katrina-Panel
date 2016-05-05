@@ -87,7 +87,7 @@
 
         // If validated is true we can continue and add the user into the database
         if($validated){
-            $sql = "INSERT INTO users (email, firstName, lastName, password, salt, language, sessionID, lastIP, lastLogin, creationDate) VALUES ('$email', '$firstName', '$lastName','$password', '$salt', '', '', '', '', '$date')";
+            $sql = "INSERT INTO users (email, firstName, lastName, password, salt, language, sessionID, lastIP, lastLogin, creationDate) VALUES ('$email', '$firstName', '$lastName','$password', '$salt', 'en', '', '', '', '$date')";
 
             if ($DB->query($sql)) {
                 echo "<div class='success'>{lang:register-success}</div>";

@@ -311,32 +311,26 @@ meter{
 
 .tableStyle:nth-child(odd){
     background-color: #F2F2F2;
-    border-right-width: 1px;
-    border-style: solid;
-    border-color: #7C7B7B;
 }
 
 .tableStyle:nth-child(even){
     background-color: #E8E8E8;
-    border-right-width: 1px;
-    border-style: solid;
-    border-color: #7C7B7B;
 }
 
 #fileTable{
     text-align: left;
 }
 
-#fileTable tr{
-    border-width: 1px;
-    border-style: solid;
-    border-color: #7C7B7B;
-}
 
 #fileTable thead{
     font-size: 13px;
     font-weight: bold;
-    background-color: #7C7B7B;
+    background-color: #9D9D9D;
+    text-align: center;
+    border-width: 0px;
+    border-right-width: 1px;
+    border-color: #b6b6b6;
+    border-style: solid;
 }
 
 
