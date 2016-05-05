@@ -61,6 +61,9 @@ class User{
 		}
 		$this->fullName = $this->firstName . ' ' . $this->lastName;
 		
+		// This is so we can cheat later in life...Shhh don't tell anyone
+		$_SESSION['userID'] = $this->id;
+		
 		// Update the language to the page
 		//$Lang->changeLanguage($this->language);
 	}

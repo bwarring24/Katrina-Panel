@@ -60,10 +60,10 @@ $langPack['home']['pageTitle'] = "Dashboard - Katrina Panel";
 $langPack['home']['title'] = "Dashboard";
 $langPack['home']['userModules'] = "User Modules";
 $langPack['home']['fileModules'] = "File Modules";
-$langPack['home']['packages'] = "Packages";
-$langPack['home']['thirdPartyPackages'] = "Third Party Packages";
-$langPack['home']['logs'] = "Logs";
-$langPack['home']['databases'] = "Databases";
+$langPack['home']['packagesModules'] = "Packages";
+$langPack['home']['thirdPartyPackagesModules'] = "Third Party Packages";
+$langPack['home']['logsModules'] = "Logs";
+$langPack['home']['databaseModules'] = "Databases";
 
 //Profile
 $langPack['profile']['pageTitle'] = "Profile - Katrina Panel";
