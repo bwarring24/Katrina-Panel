@@ -297,6 +297,7 @@ meter{
     text-align: left;
 }
 
+
 .description{
     width: 45%;
     display: inline-block;
@@ -338,4 +339,25 @@ meter{
 
 #footer{
     text-align: center;
+}
+.scrollable{
+    align-items: center;
+    border-style: solid;
+    border-color: gray;
+    border-width: 3px;
+    background-color: #F2F2F2;
+    overflow: scroll; 
+    height:300px; 
+    width: 100%;
+}
+.errorContent{
+    width: 64.5%;
+    height: auto;
+    position: relative;
+    margin-left: 24.25%;
+    border-color: #B6B6B6;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 10px;
+    background-color: #FFFFFF; 
 }

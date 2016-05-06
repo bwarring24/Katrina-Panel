@@ -179,4 +179,10 @@ $langPack['createDatabase']['retypeUserPasswordPlaceholder'] = "";
 $langPack['createDatabase']['passDoesNotMatch'] = "Passwords do not match";
 $langPack['createDatabase']['successfulyCreatedDatabase'] = "Successfuly Created Database";
 
+//Error Logs
+$langPack['errorLogs']['headerTitle'] = "Error Logs";
+$langPack['errorLogs']['content'] = "Content";
+$langPack['errorLogs']['php'] = "PHP";
+$langPack['errorLogs']['mysql'] = "MySQL";
+$langPack['errorLogs']['apache'] = "Apache";
 ?>
