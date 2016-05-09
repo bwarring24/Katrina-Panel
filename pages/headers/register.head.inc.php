@@ -92,7 +92,7 @@
             if ($DB->query($sql)) {
                 echo "<div class='success'>{lang:register-success}</div>";
             } else {
-                echo "Error: " . $sql . "<br>" . $DB->error();
+                echo "<div class='error'>{lang:register-mysqlError}</div>";
             }
         }
 

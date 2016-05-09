@@ -15,10 +15,6 @@
         </div>
             
         <div class="row rowStyle">
-            <div class="label"><h3><a href="?p=shortcuts">{lang:mod-shortcuts}</a></h3></div>
-        </div>
-            
-        <div class="row rowStyle">
             <div class="label"><h3><a href="?p=logout">{lang:mod-logout}</a></h3></div>
         </div>
     </div>

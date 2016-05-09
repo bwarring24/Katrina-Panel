@@ -53,6 +53,7 @@ $langPack['register']['emailRequired'] = "Email is required";
 $langPack['register']['passRequired'] = "Password is required";
 $langPack['register']['passRetype'] = "Must retype password";
 $langPack['register']['passDoesNotMatch'] = "Passwords do not match";
+$langPack['register']['mysqlError'] = "There was an error creating the account. Please try again.";
 
 
 // Home Pack
@@ -179,10 +180,31 @@ $langPack['createDatabase']['retypeUserPasswordPlaceholder'] = "";
 $langPack['createDatabase']['passDoesNotMatch'] = "Passwords do not match";
 $langPack['createDatabase']['successfulyCreatedDatabase'] = "Successfuly Created Database";
 
-//Error Logs
+
+// Error Logs Pack
 $langPack['errorLogs']['headerTitle'] = "Error Logs";
 $langPack['errorLogs']['content'] = "Content";
 $langPack['errorLogs']['mail'] = "Mail";
 $langPack['errorLogs']['mysql'] = "MySQL";
 $langPack['errorLogs']['apache'] = "Apache";
+
+
+// Delete Group Pack
+$langPack['deleteGroup']['title'] = "Delete Group";
+$langPack['deleteGroup']['name'] = "Group Name";
+$langPack['deleteGroup']['permissions'] = "Permissions";
+$langPack['deleteGroup']['users'] = "Users";
+$langPack['deleteGroup']['action'] = "Action";
+$langPack['deleteGroup']['deleteAction'] = "Action";
+$langPack['deleteGroup']['deleteGroup'] = "Delete Group(s)";
+$langPack['deleteGroup']['question'] = "Are you sure you want to delete the accounts";
+$langPack['deleteGroup']['yes'] = "Yes";
+$langPack['deleteGroup']['no'] = "No";
+
+
+// Group Pack
+$langPack['group']['title'] = "Group";
+$langPack['group']['name'] = "Group Name";
+$langPack['group']['permissions'] = "Permissions";
+$langPack['group']['users'] = "Users";
 ?>

@@ -21,19 +21,36 @@
             $sql = "INSERT INTO `groups` (name) VALUES('$groupName');";
             $DB->query($sql);
             
-            $sql = "";
-   
-            foreach ($modules as $module) {
+            if($categories != ""){
                 foreach($categories as $category){
-                    if($module == $category){
-                        break;
+                    $sql = "SELECT * FROM `modules` WHERE category='".$category."'";
+                    $DB->query($sql);
+                    $result = $DB->allRecords();
+                    
+                    foreach($result as $module){
+                        $module = $module['name'];
                         
+                        $sql = "INSERT INTO `groupPermissions` (groupName, categoryName, moduleName) VALUES('$groupName', '$category', '$module');";
+
+                        $DB->query($sql);
                     }
                 }
-                
-                $sql .= "INSERT INTO `groupPermissions` (groupName, categoryName, moduleName) VALUES('$groupName', '$category', '$module');";
-                $DB->query($sql);
+            }else{
+                foreach ($modules as $module) {               
+                    if($categories == ""){
+                        $sql = "SELECT * FROM `modules` WHERE name='".$module."';";
+                        $DB->query($sql);
+                        $result = $DB->singleRecord();
+                        $category = $result['category'];
+                    }
+                    
+                    $sql = "INSERT INTO `groupPermissions` (groupName, categoryName, moduleName) VALUES('$groupName', '$category', '$module');";
+
+                    $DB->query($sql);
+                }
             }
+            
+            
             
             $msg = "<div class='success'>{lang:createGroup-success}</div>";
             
