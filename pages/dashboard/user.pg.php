@@ -29,6 +29,11 @@
         ?>
 </table>
 
+    <div class="row">
+        <div class="frmLabel"><h2>{lang:user-updateAction}</h2></div>
+        <div class="frmInput"><h3><input type="submit" name="submit" value="{lang:user-updateGroup}" /></h3></div>
+    </div>
+
 </form>
 
 </div>

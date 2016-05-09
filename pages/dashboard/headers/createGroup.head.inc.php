@@ -51,7 +51,6 @@
             }
             
             
-            
             $msg = "<div class='success'>{lang:createGroup-success}</div>";
             
         }else{

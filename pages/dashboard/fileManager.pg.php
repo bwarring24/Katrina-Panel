@@ -30,3 +30,8 @@
         echo $output;
     ?>
 </table>
+
+    <div class="row">
+        <div class="frmLabel"><h2>{lang:fileManager-deleteAction}</h2></div>
+        <div class="frmInput"><h3><input type="submit" value="{lang:fileManager-deleteItem}" /></h3></div>
+    </div>

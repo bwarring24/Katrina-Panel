@@ -99,6 +99,10 @@ if($val != ""){
 	$User = User::getInstance();
 	
 	$userID = $User->getId();
+	$sql = "SELECT * FROM `users` INNER JOIN groupPermissions ON groupPermissions .groupName=users.groupName AND users.id='".$userID."'";
+	
+	$DB->query($sql);
+	$permissions = $DB->allRecords();
 	
 	$sql = "SELECT * FROM `categoryView` WHERE userID='$userID' ORDER BY 'priority' ASC";
 	
@@ -119,9 +123,10 @@ if($val != ""){
 	$i = 0;
 	
 	foreach($categories as $category){
+		
 		if($i == 0){
 			$curCategory = $category['categoryName'];
-			$i++;
+			
 			
 			$sql = "SELECT * FROM `moduleView` WHERE userID='$userID' AND categoryName='$curCategory' ORDER BY 'priority' ASC";
 	
@@ -137,19 +142,31 @@ if($val != ""){
 				$modules = $DB->allRecords();
 			}
 		}
+		$i++;
+		
+		$allowed = false;
+		foreach($permissions as $perm){
+			if($perm['categoryName'] == $category['categoryName']){
+				$allowed = true;
+				break;
+			}
+		}
+		
+		//if($allowed){
+			$output .= '<div class="modules" id="cat-'.$category["categoryName"].'">
+			<div class="headerBar">
+				<img class="leftRivet" src="theme/default/login/images/rivets.png" alt="" />
+							
+				<div class="headerTitle">
+					{lang:home-'.$category["categoryName"].'}
+				</div>
+							
+				<img class="rightRivet" src="theme/default/login/images/rivets.png" alt="" />
+			</div>
+			<div class="sortable">';
+		//}
 		
 		
-		$output .= '<div class="modules" id="cat-'.$category["categoryName"].'">
-        <div class="headerBar">
-            <img class="leftRivet" src="theme/default/login/images/rivets.png" alt="" />
-                        
-            <div class="headerTitle">
-                {lang:home-'.$category["categoryName"].'}
-            </div>
-                        
-            <img class="rightRivet" src="theme/default/login/images/rivets.png" alt="" />
-        </div>
-        <div class="sortable">';
 		
 		if($curCategory != $category['categoryName']){
 			$curCategory = $category['categoryName'];
@@ -170,22 +187,32 @@ if($val != ""){
 		}
 		
 		
+		$x = 0;
+		
 		foreach($modules as $module){
-			if($module['categoryName'] == $category['categoryName']){			
-				$output .= '<div class="module" id="mod-'.$module["moduleName"].'">
-					<a href="?p='.$module["moduleName"].'">
-						<img class="icon" src="theme/default/main/images/modules/'.$module["moduleName"].'.png" alt="{lang:mod-user}" />
-						<div class="caption">{lang:mod-'.$module["moduleName"].'}</div>
-					</a>
-				</div>';
+			$allowed = false;
+			$x++;
+			foreach($permissions as $perm){	
+				if($perm['moduleName'] == $module['moduleName']){
+					$allowed = true;
+					break;
+				}
+			}
+		
+			if($allowed){
+				if($module['categoryName'] == $category['categoryName']){			
+					$output .= '<div class="module" id="mod-'.$module["moduleName"].'">
+						<a href="?p='.$module["moduleName"].'">
+							<img class="icon" src="theme/default/main/images/modules/'.$module["moduleName"].'.png" alt="{lang:mod-user}" />
+							<div class="caption">{lang:mod-'.$module["moduleName"].'}</div>
+						</a>
+					</div>';
+				}
 			}
 		}
-		
 		$output .= "</div></div>";
 	}
 }
 
 
 ?>
-
-<div id="response"></div>
