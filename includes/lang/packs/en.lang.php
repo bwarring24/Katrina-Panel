@@ -203,8 +203,20 @@ $langPack['deleteGroup']['no'] = "No";
 
 
 // Group Pack
-$langPack['group']['title'] = "Group";
+$langPack['group']['title'] = "Groups";
 $langPack['group']['name'] = "Group Name";
 $langPack['group']['permissions'] = "Permissions";
 $langPack['group']['users'] = "Users";
+
+
+// User Pack
+$langPack['user']['title'] = "Users";
+$langPack['user']['name'] = "Name";
+$langPack['user']['email'] = "Email";
+$langPack['user']['language'] = "Language";
+$langPack['user']['lastIP'] = "Last IP";
+$langPack['user']['lastLogin'] = "Last Login";
+$langPack['user']['creationDate'] = "Created Date";
+$langPack['user']['groupName'] = "Group Name";
+
 ?>

@@ -9,6 +9,8 @@
 <div class="line">
 </div>
 
+<br />
+
 <?php
     echo $confirmDelete;
 ?>
