@@ -57,9 +57,11 @@
         
             if($folder){
                 // Is folder
+                $cleanURL = str_replace("/var/www/", "", $contentFullPath);
+                
                 $output .= '<tr class="tableStyle">
-                            <td><a href="?p=fileManager&f='.$contentFullPath.'"><img src="theme/default/main/images/modules/folder.png" class="icon" alt="folder" /></a></td>
-                            <td><a href="?p=fileManager&f='.$contentFullPath.'">'.$content.'</a></td>
+                            <td><a href="?p=fileManager&f='.$cleanURL.'"><img src="theme/default/main/images/modules/folder.png" class="icon" alt="folder" /></a></td>
+                            <td><a href="?p=fileManager&f='.$cleanURL.'">'.$content.'</a></td>
                             <td>'.$contentSize.'</td>
                             <td>'.$contentPermission.'</td>
                             <td>'.$contentDate.'</td>

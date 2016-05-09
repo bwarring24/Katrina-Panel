@@ -30,11 +30,12 @@ class Auth{
             $row = $this->DB->singleRecord();
             $this->authenticated = $this->compareHash($row['password']);
             //setcookie("authenticated", "1", (time() + 3600), "/phase4/Katrina-Panel/");
-            setcookie("authenticated", "1", (time() + 3600), "/");
+            
             $_SESSION['authenticated'] = $this->authenticated;
 
             if($this->isAuthenticated()){
                 $this->User->updateInfo($row);
+                setcookie("authenticated", "1", (time() + 3600), "/");
                 //unset($_SESSION['password']);
             }
 

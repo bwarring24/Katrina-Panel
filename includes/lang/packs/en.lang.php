@@ -236,4 +236,17 @@ $langPack['deleteUser']['question'] = "Are you sure you want to delete the accou
 $langPack['deleteUser']['yes'] = "Yes";
 $langPack['deleteUser']['no'] = "No";
 
+
+// File Manager Pack
+$langPack['fileManager']['title'] = "File Manager";
+$langPack['fileManager']['type'] = "Type";
+$langPack['fileManager']['name'] = "Name";
+$langPack['fileManager']['size'] = "Size";
+$langPack['fileManager']['perm'] = "Perm";
+$langPack['fileManager']['date'] = "Date";
+$langPack['fileManager']['uid'] = "UID";
+$langPack['fileManager']['gid'] = "GID";
+$langPack['fileManager']['action'] = "Action";
+$langPack['fileManager']['select'] = "Select";
+
 ?>
