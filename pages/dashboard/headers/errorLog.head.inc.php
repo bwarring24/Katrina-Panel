@@ -1,13 +1,13 @@
 <?php
   function getLog($type) {
-    if($type == "php"){
-    	$errorLog = fopen("/Applications/MAMP/logs/php_error.log", "r") or die("Unable to open file!");//change file paths
+    if($type == "mail"){
+    	$errorLog = fopen("/var/log/mail.err", "r") or die("Unable to open file!");//change file paths
     }
     if($type == "mysql"){
-    	$errorLog= fopen("/Applications/MAMP/logs/mysql_error_log.err", "r") or die("Unable to open file!");
+    	$errorLog= fopen("/var/log/mysql.err", "r") or die("Unable to open file!");
     }
     if($type == "apache"){
-    	$errorLog = fopen("/Applications/MAMP/logs/apache_error.log", "r") or die("Unable to open file!");
+    	$errorLog = fopen("/var/log/apache2/error.log", "r") or die("Unable to open file!");
     }
     return $errorLog;
   }

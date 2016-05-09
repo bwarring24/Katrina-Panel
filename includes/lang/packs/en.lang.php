@@ -182,7 +182,7 @@ $langPack['createDatabase']['successfulyCreatedDatabase'] = "Successfuly Created
 //Error Logs
 $langPack['errorLogs']['headerTitle'] = "Error Logs";
 $langPack['errorLogs']['content'] = "Content";
-$langPack['errorLogs']['php'] = "PHP";
+$langPack['errorLogs']['mail'] = "Mail";
 $langPack['errorLogs']['mysql'] = "MySQL";
 $langPack['errorLogs']['apache'] = "Apache";
 ?>

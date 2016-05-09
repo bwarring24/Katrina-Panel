@@ -17,7 +17,7 @@
             <div class="label"><h3><a href="index.php?p=errorLog&type=mysql">{lang:errorLogs-mysql}</a></h3></div>
     </div>
     <div class="row rowStyle">
-            <div class="label"><h3><a href="index.php?p=errorLog&type=php">{lang:errorLogs-php}</a></h3></div>
+            <div class="label"><h3><a href="index.php?p=errorLog&type=mail">{lang:errorLogs-mail}</a></h3></div>
     </div>
 </div>
 </div>
