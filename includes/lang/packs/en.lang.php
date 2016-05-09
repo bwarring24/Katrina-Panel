@@ -197,7 +197,7 @@ $langPack['deleteGroup']['users'] = "Users";
 $langPack['deleteGroup']['action'] = "Action";
 $langPack['deleteGroup']['deleteAction'] = "Action";
 $langPack['deleteGroup']['deleteGroup'] = "Delete Group(s)";
-$langPack['deleteGroup']['question'] = "Are you sure you want to delete the accounts";
+$langPack['deleteGroup']['question'] = "Are you sure you want to delete the groups";
 $langPack['deleteGroup']['yes'] = "Yes";
 $langPack['deleteGroup']['no'] = "No";
 
@@ -218,5 +218,22 @@ $langPack['user']['lastIP'] = "Last IP";
 $langPack['user']['lastLogin'] = "Last Login";
 $langPack['user']['creationDate'] = "Created Date";
 $langPack['user']['groupName'] = "Group Name";
+
+
+// Delete User Pack
+$langPack['deleteUser']['title'] = "Delete User";
+$langPack['deleteUser']['name'] = "Name";
+$langPack['deleteUser']['email'] = "Email";
+$langPack['deleteUser']['language'] = "Language";
+$langPack['deleteUser']['lastIP'] = "Last IP";
+$langPack['deleteUser']['lastLogin'] = "Last Login";
+$langPack['deleteUser']['creationDate'] = "Created Date";
+$langPack['deleteUser']['groupName'] = "Group Name";
+$langPack['deleteUser']['action'] = "Action";
+$langPack['deleteUser']['deleteAction'] = "Action";
+$langPack['deleteUser']['deleteUser'] = "Delete User(s)";
+$langPack['deleteUser']['question'] = "Are you sure you want to delete the accounts";
+$langPack['deleteUser']['yes'] = "Yes";
+$langPack['deleteUser']['no'] = "No";
 
 ?>

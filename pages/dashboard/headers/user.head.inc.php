@@ -15,7 +15,7 @@
                   <td>'.$user['language'].'</td>
                   <td>'.$user['lastIP'].'</td>
                   <td>'.$user['lastLogin'].'</td>
-                  <td>'.$user['emcreationDateail'].'</td>
+                  <td>'.$user['creationDate'].'</td>
                   <td>'.$user['groupName'].'</td></tr>';
     }
 ?>
